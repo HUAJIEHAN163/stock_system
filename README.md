@@ -73,17 +73,26 @@ python test_env.py
 stock_system/
 ├── README.md                          # 项目说明
 ├── requirements.txt                   # 依赖包列表
-├── install_env.py                     # 环境安装脚本
-├── test_env.py                       # 环境测试脚本
-├── tushare_api_classification.md     # API分类文档（主文档）
-├── tushare网页.txt                   # 原始API链接列表
+├── run.py                            # 标准启动脚本
+├── start_with_console.py             # 带控制台日志启动脚本
+├── 启动系统(带日志).bat               # Windows批处理启动文件
+├── src/                              # 源代码目录
+│   ├── main.py                       # 主程序入口
+│   ├── ui/                           # 用户界面
+│   │   ├── main_window.py            # 主窗口
+│   │   └── windows/                  # 功能窗口
+│   └── data/                         # 数据处理模块
+├── logs/                             # 日志文件目录
+│   └── stock_system_YYYYMMDD.log     # 按日期命名的日志文件
+├── database/                         # 数据库文件
+├── config/                           # 配置文件
 ├── docs/                             # 本地API文档目录
 │   ├── 25_股票列表.md
 │   ├── 27_A股日线行情.md
 │   └── ... (102个API文档)
-├── crawl_api_docs.py                 # API文档爬虫脚本
-├── merge_docs.py                     # 文档合并脚本
-└── 其他工具脚本...
+└── 数据调查/                          # API分类和文档
+    └── 数据准备/
+        └── 00_tushare_api_classification.md  # API分类文档
 ```
 
 ## 🎯 API分类说明
@@ -107,6 +116,34 @@ stock_system/
 - 资金流向: 各类流向统计
 - 打板数据: 涨跌停、筹码等
 - 两融转融通: 融资融券相关
+
+## 🚀 系统启动
+
+### 启动方式
+
+#### 方法1: 带控制台日志启动（推荐）
+```bash
+# 命令行启动
+python start_with_console.py
+
+# 或双击批处理文件（Windows）
+启动系统(带日志).bat
+```
+
+#### 方法2: 标准启动
+```bash
+# 标准启动（无控制台日志）
+python run.py
+```
+
+### 🔍 日志系统
+
+- **控制台日志**: 实时显示系统运行状态和操作日志
+- **文件日志**: 自动保存到 `logs/` 目录，按日期命名
+- **日志级别**: INFO级别，包含详细的操作记录
+- **日志格式**: 时间戳 + 模块名 + 级别 + 消息内容
+
+**日志文件位置**: `logs/stock_system_YYYYMMDD.log`
 
 ## 🔍 使用示例
 
@@ -172,6 +209,18 @@ python test_env.py
 pip install -r requirements.txt --upgrade
 ```
 
+### 启动选项
+```bash
+# 带控制台日志启动（开发调试推荐）
+python start_with_console.py
+
+# 标准启动
+python run.py
+
+# 直接启动主程序
+python src/main.py
+```
+
 ### 文档管理
 ```bash
 # 爬取最新API文档
@@ -197,6 +246,15 @@ A: 运行 `python crawl_api_docs.py` 重新爬取最新文档
 
 ### Q: 文档链接无法跳转？
 A: 确保使用支持Markdown的编辑器，如VS Code、Typora等
+
+### Q: 如何查看系统运行日志？
+A: 使用 `python start_with_console.py` 启动，或双击 `启动系统(带日志).bat` 文件
+
+### Q: 控制台窗口可以关闭吗？
+A: 建议保持控制台窗口打开以查看实时日志，关闭控制台不会影响GUI运行
+
+### Q: 日志文件在哪里？
+A: 日志文件自动保存在 `logs/` 目录下，按日期命名
 
 ## 📞 技术支持
 

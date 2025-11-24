@@ -15,67 +15,41 @@ from PyQt5.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QPushButton,
 from PyQt5.QtCore import Qt, QThread, pyqtSignal, QTimer
 from PyQt5.QtGui import QFont
 
+# 导入数据初始化器
+from ...data.data_initializer import DataInitializer
+
 class DataInitThread(QThread):
     """数据初始化线程"""
     progress_updated = pyqtSignal(int, str)  # 进度, 消息
-    finished_signal = pyqtSignal(bool, str)  # 成功/失败, 消息
+    batch_completed = pyqtSignal(str, bool, str)  # 批次名, 成功/失败, 消息
+    finished_signal = pyqtSignal(bool, str, dict)  # 成功/失败, 消息, 详细结果
     
-    def __init__(self):
+    def __init__(self, batches=['batch_1']):
         super().__init__()
+        self.batches = batches
         
     def run(self):
         """执行数据初始化"""
         try:
-            self.progress_updated.emit(10, "正在连接数据源...")
-            
             # 加载token配置
             token_config = self.load_token_config()
             if not token_config:
-                self.finished_signal.emit(False, "未找到Token配置，请先设置Token")
+                self.finished_signal.emit(False, "未找到Token配置，请先设置Token", {})
                 return
-                
-            # 导入对应的库
-            if token_config['token_type'] == 'tudata':
-                import tudata as ts
-            else:
-                import tushare as ts
-                
-            ts.set_token(token_config['token'])
-            pro = ts.pro_api()
             
-            self.progress_updated.emit(20, "正在创建数据库...")
+            # 创建数据初始化器
+            initializer = DataInitializer(self.batches, token_config)
             
-            # 创建数据库
-            self.create_database()
+            # 连接信号
+            initializer.progress_updated.connect(self.progress_updated)
+            initializer.batch_completed.connect(self.batch_completed)
+            initializer.finished_signal.connect(self.finished_signal)
             
-            self.progress_updated.emit(30, "正在获取股票列表...")
-            
-            # 获取股票基本信息
-            stock_basic = pro.stock_basic(exchange='', list_status='L',
-                                        fields='ts_code,symbol,name,area,industry,market,list_date')
-            
-            self.progress_updated.emit(50, f"正在保存股票数据 ({len(stock_basic)}条)...")
-            
-            # 保存到数据库
-            self.save_stock_basic(stock_basic)
-            
-            self.progress_updated.emit(70, "正在获取交易日历...")
-            
-            # 获取交易日历
-            end_date = datetime.now().strftime('%Y%m%d')
-            start_date = (datetime.now() - timedelta(days=365)).strftime('%Y%m%d')
-            trade_cal = pro.trade_cal(exchange='', start_date=start_date, end_date=end_date)
-            
-            self.progress_updated.emit(90, "正在保存交易日历...")
-            
-            # 保存交易日历
-            self.save_trade_calendar(trade_cal)
-            
-            self.progress_updated.emit(100, "数据初始化完成")
-            self.finished_signal.emit(True, f"成功初始化 {len(stock_basic)} 只股票数据")
+            # 执行初始化
+            initializer.run()
             
         except Exception as e:
-            self.finished_signal.emit(False, f"数据初始化失败: {str(e)}")
+            self.finished_signal.emit(False, f"初始化失败: {str(e)}", {})
             
     def load_token_config(self):
         """加载token配置"""
@@ -88,83 +62,12 @@ class DataInitThread(QThread):
             with open(config_file, 'r', encoding='utf-8') as f:
                 for line in f:
                     line = line.strip()
-                    if '=' in line:
+                    if '=' in line and not line.startswith('#'):
                         key, value = line.split('=', 1)
-                        config[key] = value
+                        config[key.strip()] = value.strip()
             return config
         except:
             return None
-            
-    def create_database(self):
-        """创建数据库表"""
-        db_dir = "database"
-        if not os.path.exists(db_dir):
-            os.makedirs(db_dir)
-            
-        conn = sqlite3.connect("database/stock_data.db")
-        cursor = conn.cursor()
-        
-        # 创建股票基本信息表
-        cursor.execute('''
-            CREATE TABLE IF NOT EXISTS stock_basic (
-                ts_code TEXT PRIMARY KEY,
-                symbol TEXT,
-                name TEXT,
-                area TEXT,
-                industry TEXT,
-                market TEXT,
-                list_date TEXT,
-                update_time TEXT
-            )
-        ''')
-        
-        # 创建交易日历表
-        cursor.execute('''
-            CREATE TABLE IF NOT EXISTS trade_calendar (
-                cal_date TEXT PRIMARY KEY,
-                is_open INTEGER,
-                pretrade_date TEXT
-            )
-        ''')
-        
-        # 创建日线行情表
-        cursor.execute('''
-            CREATE TABLE IF NOT EXISTS daily_basic (
-                ts_code TEXT,
-                trade_date TEXT,
-                open REAL,
-                high REAL,
-                low REAL,
-                close REAL,
-                pre_close REAL,
-                change REAL,
-                pct_chg REAL,
-                vol REAL,
-                amount REAL,
-                PRIMARY KEY (ts_code, trade_date)
-            )
-        ''')
-        
-        conn.commit()
-        conn.close()
-        
-    def save_stock_basic(self, df):
-        """保存股票基本信息"""
-        conn = sqlite3.connect("database/stock_data.db")
-        
-        # 添加更新时间
-        df['update_time'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        
-        # 保存数据
-        df.to_sql('stock_basic', conn, if_exists='replace', index=False)
-        
-        conn.close()
-        
-    def save_trade_calendar(self, df):
-        """保存交易日历"""
-        conn = sqlite3.connect("database/stock_data.db")
-        df.to_sql('trade_calendar', conn, if_exists='replace', index=False)
-        conn.close()
 
 class DataUpdateThread(QThread):
     """数据更新线程"""
@@ -309,6 +212,11 @@ class StockListWindow(QWidget):
         self.update_button.clicked.connect(self.update_data)
         data_layout.addWidget(self.update_button)
         
+        # 基础初始化按钮
+        self.advanced_init_button = QPushButton("基础初始化")
+        self.advanced_init_button.clicked.connect(self.advanced_init_data)
+        data_layout.addWidget(self.advanced_init_button)
+        
         # 刷新列表按钮
         self.refresh_button = QPushButton("刷新列表")
         self.refresh_button.clicked.connect(self.load_stock_data)
@@ -406,16 +314,31 @@ class StockListWindow(QWidget):
         return panel
         
     def init_data(self):
-        """数据初始化"""
+        """完整数据初始化（初始化所有批次）"""
         reply = QMessageBox.question(self, '确认', 
-                                   '数据初始化将重新下载所有基础数据，可能需要较长时间。\n确定要继续吗？',
+                                   '数据初始化将获取股票列表、交易日历、历史行情等完整数据。\n确定要继续吗？',
                                    QMessageBox.Yes | QMessageBox.No)
         if reply != QMessageBox.Yes:
             return
             
+        self._start_initialization(['batch_1', 'batch_2'])
+        
+    def advanced_init_data(self):
+        """基础数据初始化（只初始化基础信息）"""
+        reply = QMessageBox.question(self, '确认', 
+                                   '基础初始化只获取股票列表、交易日历等基础信息。\n确定要继续吗？',
+                                   QMessageBox.Yes | QMessageBox.No)
+        if reply != QMessageBox.Yes:
+            return
+            
+        self._start_initialization(['batch_1'])
+        
+    def _start_initialization(self, batches):
+        """启动初始化进程"""
         # 禁用按钮
         self.init_button.setEnabled(False)
         self.update_button.setEnabled(False)
+        self.advanced_init_button.setEnabled(False)
         
         # 显示进度条
         self.progress_bar.setVisible(True)
@@ -423,11 +346,12 @@ class StockListWindow(QWidget):
         
         # 清空状态
         self.status_text.clear()
-        self.status_text.append("开始数据初始化...")
+        self.status_text.append(f"开始数据初始化 - 批次: {', '.join(batches)}")
         
         # 启动初始化线程
-        self.init_thread = DataInitThread()
+        self.init_thread = DataInitThread(batches)
         self.init_thread.progress_updated.connect(self.on_progress_updated)
+        self.init_thread.batch_completed.connect(self.on_batch_completed)
         self.init_thread.finished_signal.connect(self.on_init_finished)
         self.init_thread.start()
         
@@ -456,13 +380,28 @@ class StockListWindow(QWidget):
         self.progress_bar.setValue(progress)
         self.status_text.append(f"[{progress}%] {message}")
         
-    def on_init_finished(self, success, message):
+    def on_batch_completed(self, batch_name, success, message):
+        """批次完成回调"""
+        status_icon = "✅" if success else "❌"
+        self.status_text.append(f"{status_icon} {batch_name}: {message}")
+        
+    def on_init_finished(self, success, message, results):
         """初始化完成"""
         self.progress_bar.setVisible(False)
         self.init_button.setEnabled(True)
         self.update_button.setEnabled(True)
+        self.advanced_init_button.setEnabled(True)
         
-        self.status_text.append(f"\n初始化结果: {message}")
+        # 显示详细结果
+        self.status_text.append(f"\n=== 初始化结果 ===\n{message}")
+        
+        if results:
+            for batch_name, batch_result in results.items():
+                self.status_text.append(f"\n{batch_name}:")
+                self.status_text.append(f"  总计: {batch_result['total_apis']} 个API")
+                self.status_text.append(f"  成功: {batch_result['completed_apis']} 个")
+                self.status_text.append(f"  失败: {batch_result['failed_apis']} 个")
+                self.status_text.append(f"  记录: {batch_result['total_records']} 条")
         
         if success:
             QMessageBox.information(self, "成功", message)

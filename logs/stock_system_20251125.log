@@ -1,0 +1,37 @@
+2025-11-25 00:08:00,845 - StockSystem - INFO - 日志系统初始化完成
+2025-11-25 00:08:00,845 - StockSystem - INFO - 测试日志输出...
+2025-11-25 00:08:01,071 - StockSystem - INFO - 开始启动GUI应用程序
+2025-11-25 00:08:01,071 - StockSystem - INFO - 日志系统初始化完成
+2025-11-25 00:08:01,072 - StockSystem - INFO - 系统启动 - 股票分析系统 0.5.0-beta
+2025-11-25 00:08:01,081 - StockSystem - INFO - Qt应用程序初始化完成
+2025-11-25 00:08:01,081 - StockSystem - INFO - 开始版本兼容性检查
+2025-11-25 00:08:01,081 - StockSystem - INFO - 版本兼容性检查通过: 版本兼容性检查通过
+2025-11-25 00:08:01,081 - StockSystem - INFO - 开始系统依赖检查
+2025-11-25 00:08:01,133 - StockSystem - INFO - 系统依赖检查完成
+2025-11-25 00:08:01,134 - StockSystem - INFO - 开始系统目录检查
+2025-11-25 00:08:01,134 - StockSystem - INFO - 系统目录检查完成
+2025-11-25 00:08:01,134 - StockSystem - INFO - 所有检查完成，开始启动主界面
+2025-11-25 00:08:01,135 - StockSystem.MainWindow - INFO - 初始化主窗口
+2025-11-25 00:08:01,135 - StockSystem.MainWindow - INFO - 开始初始化用户界面
+2025-11-25 00:08:01,135 - StockSystem.MainWindow - INFO - 设置窗口标题: 股票分析系统 0.5.0-beta
+2025-11-25 00:08:01,135 - StockSystem.MainWindow - INFO - 设置窗口大小: 1400x900
+2025-11-25 00:08:01,135 - StockSystem.MainWindow - INFO - 创建功能窗口...
+2025-11-25 00:08:01,328 - StockSystem.MainWindow - INFO - 功能窗口创建完成，已添加4个选项卡
+2025-11-25 00:08:01,328 - StockSystem.MainWindow - INFO - 创建菜单栏
+2025-11-25 00:08:01,335 - StockSystem.MainWindow - INFO - 创建工具栏
+2025-11-25 00:08:01,336 - StockSystem.MainWindow - INFO - 创建状态栏
+2025-11-25 00:08:01,336 - StockSystem.MainWindow - INFO - 用户界面初始化完成
+2025-11-25 00:08:01,336 - StockSystem.MainWindow - INFO - 主窗口初始化完成
+2025-11-25 00:08:01,440 - StockSystem - INFO - 主界面启动成功
+2025-11-25 00:08:01,440 - StockSystem - INFO - 系统启动完成，进入事件循环
+2025-11-25 00:08:05,885 - StockSystem.DataInitializer - INFO - 开始数据初始化
+2025-11-25 00:08:05,885 - StockSystem.DataInitializer - INFO - 初始化API连接...
+2025-11-25 00:08:05,886 - StockSystem.DataInitializer - INFO - Token类型: tudata
+2025-11-25 00:08:05,887 - StockSystem.DataInitializer - INFO - 使用tudata库
+2025-11-25 00:08:05,891 - StockSystem.DataInitializer - INFO - API连接初始化完成
+2025-11-25 00:08:05,891 - StockSystem.DataInitializer - INFO - 测试API连接...
+2025-11-25 00:08:06,092 - StockSystem.DataInitializer - INFO - API连接测试成功
+2025-11-25 00:08:06,093 - StockSystem.DataInitializer - INFO - 创建数据库表...
+2025-11-25 00:08:06,124 - StockSystem.DataInitializer - INFO - 数据库表创建完成
+2025-11-25 00:08:06,124 - StockSystem.DataInitializer - INFO - 开始执行 batch_1...
+2025-11-25 00:08:08,202 - StockSystem.DataInitializer - INFO - batch_1 执行结果: batch_1 完成: 4/4 APIs, 8848 条记录

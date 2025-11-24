@@ -1,0 +1,90 @@
+{
+  "stock_basic": {
+    "status": "ERROR",
+    "error": "您的token不对，请确认。",
+    "rows": 0,
+    "columns": [],
+    "time": 0,
+    "sample_data": {}
+  },
+  "stock_company": {
+    "status": "ERROR",
+    "error": "您的token不对，请确认。",
+    "rows": 0,
+    "columns": [],
+    "time": 0,
+    "sample_data": {}
+  },
+  "trade_cal": {
+    "status": "ERROR",
+    "error": "您的token不对，请确认。",
+    "rows": 0,
+    "columns": [],
+    "time": 0,
+    "sample_data": {}
+  },
+  "new_share": {
+    "status": "ERROR",
+    "error": "您的token不对，请确认。",
+    "rows": 0,
+    "columns": [],
+    "time": 0,
+    "sample_data": {}
+  },
+  "daily_single_date": {
+    "status": "ERROR",
+    "error": "您的token不对，请确认。",
+    "rows": 0,
+    "columns": [],
+    "time": 0,
+    "sample_data": {}
+  },
+  "daily_multi_stock": {
+    "status": "ERROR",
+    "error": "您的token不对，请确认。",
+    "rows": 0,
+    "columns": [],
+    "time": 0,
+    "sample_data": {}
+  },
+  "weekly": {
+    "status": "ERROR",
+    "error": "您的token不对，请确认。",
+    "rows": 0,
+    "columns": [],
+    "time": 0,
+    "sample_data": {}
+  },
+  "monthly": {
+    "status": "ERROR",
+    "error": "您的token不对，请确认。",
+    "rows": 0,
+    "columns": [],
+    "time": 0,
+    "sample_data": {}
+  },
+  "adj_factor": {
+    "status": "ERROR",
+    "error": "您的token不对，请确认。",
+    "rows": 0,
+    "columns": [],
+    "time": 0,
+    "sample_data": {}
+  },
+  "index_dailybasic": {
+    "status": "ERROR",
+    "error": "您的token不对，请确认。",
+    "rows": 0,
+    "columns": [],
+    "time": 0,
+    "sample_data": {}
+  },
+  "stk_mins": {
+    "status": "ERROR",
+    "error": "您的token不对，请确认。",
+    "rows": 0,
+    "columns": [],
+    "time": 0,
+    "sample_data": {}
+  }
+}

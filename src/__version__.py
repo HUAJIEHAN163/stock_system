@@ -4,12 +4,12 @@
 版本信息模块
 """
 
-__version__ = "0.5.0-beta"
-__version_info__ = (0, 5, 0, "beta")
+__version__ = "0.6.0-beta"
+__version_info__ = (0, 6, 0, "beta")
 
 # 版本详细信息
 VERSION_MAJOR = 0
-VERSION_MINOR = 5
+VERSION_MINOR = 6
 VERSION_PATCH = 0
 VERSION_PRERELEASE = "beta"
 

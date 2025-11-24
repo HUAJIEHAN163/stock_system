@@ -1,0 +1,299 @@
+2025-11-24 21:14:06,875 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 21:14:06,875 - StockSystem - INFO - 系统启动 - 股票分析系统 0.5.0-beta
+2025-11-24 21:14:06,897 - StockSystem - INFO - Qt应用程序初始化完成
+2025-11-24 21:14:06,898 - StockSystem - INFO - 开始版本兼容性检查
+2025-11-24 21:14:06,898 - StockSystem - INFO - 版本兼容性检查通过: 版本兼容性检查通过
+2025-11-24 21:14:06,898 - StockSystem - INFO - 开始系统依赖检查
+2025-11-24 21:14:06,956 - StockSystem - INFO - 系统依赖检查完成
+2025-11-24 21:14:06,956 - StockSystem - INFO - 开始系统目录检查
+2025-11-24 21:14:06,956 - StockSystem - INFO - 系统目录检查完成
+2025-11-24 21:14:06,958 - StockSystem - INFO - 所有检查完成，开始启动主界面
+2025-11-24 21:14:06,958 - StockSystem.MainWindow - INFO - 初始化主窗口
+2025-11-24 21:14:06,958 - StockSystem.MainWindow - INFO - 开始初始化用户界面
+2025-11-24 21:14:06,958 - StockSystem.MainWindow - INFO - 设置窗口标题: 股票分析系统 0.5.0-beta
+2025-11-24 21:14:06,958 - StockSystem.MainWindow - INFO - 设置窗口大小: 1400x900
+2025-11-24 21:14:06,958 - StockSystem.MainWindow - INFO - 创建功能窗口...
+2025-11-24 21:14:07,188 - StockSystem.MainWindow - INFO - 功能窗口创建完成，已添加4个选项卡
+2025-11-24 21:14:07,189 - StockSystem.MainWindow - INFO - 创建菜单栏
+2025-11-24 21:14:07,193 - StockSystem.MainWindow - INFO - 创建工具栏
+2025-11-24 21:14:07,194 - StockSystem.MainWindow - INFO - 创建状态栏
+2025-11-24 21:14:07,194 - StockSystem.MainWindow - INFO - 用户界面初始化完成
+2025-11-24 21:14:07,194 - StockSystem.MainWindow - INFO - 主窗口初始化完成
+2025-11-24 21:14:07,300 - StockSystem - INFO - 主界面启动成功
+2025-11-24 21:14:07,300 - StockSystem - INFO - 系统启动完成，进入事件循环
+2025-11-24 21:14:20,233 - StockSystem.MainWindow - INFO - 用户请求关闭应用程序
+2025-11-24 21:14:21,464 - StockSystem.MainWindow - INFO - 用户确认退出，开始清理资源
+2025-11-24 21:14:21,475 - StockSystem - INFO - 应用程序退出
+2025-11-24 21:20:22,409 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 21:20:22,643 - StockSystem - INFO - 开始启动GUI应用程序
+2025-11-24 21:20:22,643 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 21:20:22,643 - StockSystem - INFO - 系统启动 - 股票分析系统 0.5.0-beta
+2025-11-24 21:20:22,660 - StockSystem - INFO - Qt应用程序初始化完成
+2025-11-24 21:20:22,660 - StockSystem - INFO - 开始版本兼容性检查
+2025-11-24 21:20:22,660 - StockSystem - INFO - 版本兼容性检查通过: 版本兼容性检查通过
+2025-11-24 21:20:22,660 - StockSystem - INFO - 开始系统依赖检查
+2025-11-24 21:20:22,713 - StockSystem - INFO - 系统依赖检查完成
+2025-11-24 21:20:22,713 - StockSystem - INFO - 开始系统目录检查
+2025-11-24 21:20:22,713 - StockSystem - INFO - 系统目录检查完成
+2025-11-24 21:20:22,713 - StockSystem - INFO - 所有检查完成，开始启动主界面
+2025-11-24 21:20:22,713 - StockSystem.MainWindow - INFO - 初始化主窗口
+2025-11-24 21:20:22,713 - StockSystem.MainWindow - INFO - 开始初始化用户界面
+2025-11-24 21:20:22,713 - StockSystem.MainWindow - INFO - 设置窗口标题: 股票分析系统 0.5.0-beta
+2025-11-24 21:20:22,713 - StockSystem.MainWindow - INFO - 设置窗口大小: 1400x900
+2025-11-24 21:20:22,713 - StockSystem.MainWindow - INFO - 创建功能窗口...
+2025-11-24 21:20:22,944 - StockSystem.MainWindow - INFO - 功能窗口创建完成，已添加4个选项卡
+2025-11-24 21:20:22,945 - StockSystem.MainWindow - INFO - 创建菜单栏
+2025-11-24 21:20:22,945 - StockSystem.MainWindow - INFO - 创建工具栏
+2025-11-24 21:20:22,945 - StockSystem.MainWindow - INFO - 创建状态栏
+2025-11-24 21:20:22,945 - StockSystem.MainWindow - INFO - 用户界面初始化完成
+2025-11-24 21:20:22,945 - StockSystem.MainWindow - INFO - 主窗口初始化完成
+2025-11-24 21:20:23,053 - StockSystem - INFO - 主界面启动成功
+2025-11-24 21:20:23,053 - StockSystem - INFO - 系统启动完成，进入事件循环
+2025-11-24 21:20:26,212 - StockSystem.MainWindow - INFO - 用户请求关闭应用程序
+2025-11-24 21:20:27,371 - StockSystem.MainWindow - INFO - 用户确认退出，开始清理资源
+2025-11-24 21:20:27,384 - StockSystem - INFO - 应用程序退出
+2025-11-24 21:21:36,754 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 21:21:36,990 - StockSystem - INFO - 开始启动GUI应用程序
+2025-11-24 21:21:36,991 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 21:21:36,991 - StockSystem - INFO - 系统启动 - 股票分析系统 0.5.0-beta
+2025-11-24 21:21:36,993 - StockSystem - INFO - Qt应用程序初始化完成
+2025-11-24 21:21:36,993 - StockSystem - INFO - 开始版本兼容性检查
+2025-11-24 21:21:36,993 - StockSystem - INFO - 版本兼容性检查通过: 版本兼容性检查通过
+2025-11-24 21:21:36,993 - StockSystem - INFO - 开始系统依赖检查
+2025-11-24 21:21:37,054 - StockSystem - INFO - 系统依赖检查完成
+2025-11-24 21:21:37,054 - StockSystem - INFO - 开始系统目录检查
+2025-11-24 21:21:37,054 - StockSystem - INFO - 系统目录检查完成
+2025-11-24 21:21:37,054 - StockSystem - INFO - 所有检查完成，开始启动主界面
+2025-11-24 21:21:37,054 - StockSystem.MainWindow - INFO - 初始化主窗口
+2025-11-24 21:21:37,054 - StockSystem.MainWindow - INFO - 开始初始化用户界面
+2025-11-24 21:21:37,055 - StockSystem.MainWindow - INFO - 设置窗口标题: 股票分析系统 0.5.0-beta
+2025-11-24 21:21:37,055 - StockSystem.MainWindow - INFO - 设置窗口大小: 1400x900
+2025-11-24 21:21:37,056 - StockSystem.MainWindow - INFO - 创建功能窗口...
+2025-11-24 21:21:37,288 - StockSystem.MainWindow - INFO - 功能窗口创建完成，已添加4个选项卡
+2025-11-24 21:21:37,289 - StockSystem.MainWindow - INFO - 创建菜单栏
+2025-11-24 21:21:37,293 - StockSystem.MainWindow - INFO - 创建工具栏
+2025-11-24 21:21:37,294 - StockSystem.MainWindow - INFO - 创建状态栏
+2025-11-24 21:21:37,294 - StockSystem.MainWindow - INFO - 用户界面初始化完成
+2025-11-24 21:21:37,294 - StockSystem.MainWindow - INFO - 主窗口初始化完成
+2025-11-24 21:21:37,404 - StockSystem - INFO - 主界面启动成功
+2025-11-24 21:21:37,405 - StockSystem - INFO - 系统启动完成，进入事件循环
+2025-11-24 21:21:39,843 - StockSystem.MainWindow - INFO - 用户请求关闭应用程序
+2025-11-24 21:21:41,175 - StockSystem.MainWindow - INFO - 用户确认退出，开始清理资源
+2025-11-24 21:21:41,184 - StockSystem - INFO - 应用程序退出
+2025-11-24 21:21:57,152 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 21:21:57,393 - StockSystem - INFO - 开始启动GUI应用程序
+2025-11-24 21:21:57,394 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 21:21:57,394 - StockSystem - INFO - 系统启动 - 股票分析系统 0.5.0-beta
+2025-11-24 21:21:57,408 - StockSystem - INFO - Qt应用程序初始化完成
+2025-11-24 21:21:57,408 - StockSystem - INFO - 开始版本兼容性检查
+2025-11-24 21:21:57,408 - StockSystem - INFO - 版本兼容性检查通过: 版本兼容性检查通过
+2025-11-24 21:21:57,408 - StockSystem - INFO - 开始系统依赖检查
+2025-11-24 21:21:57,458 - StockSystem - INFO - 系统依赖检查完成
+2025-11-24 21:21:57,458 - StockSystem - INFO - 开始系统目录检查
+2025-11-24 21:21:57,458 - StockSystem - INFO - 系统目录检查完成
+2025-11-24 21:21:57,459 - StockSystem - INFO - 所有检查完成，开始启动主界面
+2025-11-24 21:21:57,459 - StockSystem.MainWindow - INFO - 初始化主窗口
+2025-11-24 21:21:57,459 - StockSystem.MainWindow - INFO - 开始初始化用户界面
+2025-11-24 21:21:57,460 - StockSystem.MainWindow - INFO - 设置窗口标题: 股票分析系统 0.5.0-beta
+2025-11-24 21:21:57,460 - StockSystem.MainWindow - INFO - 设置窗口大小: 1400x900
+2025-11-24 21:21:57,460 - StockSystem.MainWindow - INFO - 创建功能窗口...
+2025-11-24 21:21:57,651 - StockSystem.MainWindow - INFO - 功能窗口创建完成，已添加4个选项卡
+2025-11-24 21:21:57,652 - StockSystem.MainWindow - INFO - 创建菜单栏
+2025-11-24 21:21:57,658 - StockSystem.MainWindow - INFO - 创建工具栏
+2025-11-24 21:21:57,659 - StockSystem.MainWindow - INFO - 创建状态栏
+2025-11-24 21:21:57,659 - StockSystem.MainWindow - INFO - 用户界面初始化完成
+2025-11-24 21:21:57,659 - StockSystem.MainWindow - INFO - 主窗口初始化完成
+2025-11-24 21:21:57,766 - StockSystem - INFO - 主界面启动成功
+2025-11-24 21:21:57,766 - StockSystem - INFO - 系统启动完成，进入事件循环
+2025-11-24 21:23:27,601 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 21:23:27,820 - StockSystem - INFO - 开始启动GUI应用程序
+2025-11-24 21:23:27,820 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 21:23:27,820 - StockSystem - INFO - 系统启动 - 股票分析系统 0.5.0-beta
+2025-11-24 21:23:27,834 - StockSystem - INFO - Qt应用程序初始化完成
+2025-11-24 21:23:27,834 - StockSystem - INFO - 开始版本兼容性检查
+2025-11-24 21:23:27,834 - StockSystem - INFO - 版本兼容性检查通过: 版本兼容性检查通过
+2025-11-24 21:23:27,834 - StockSystem - INFO - 开始系统依赖检查
+2025-11-24 21:23:27,884 - StockSystem - INFO - 系统依赖检查完成
+2025-11-24 21:23:27,885 - StockSystem - INFO - 开始系统目录检查
+2025-11-24 21:23:27,885 - StockSystem - INFO - 系统目录检查完成
+2025-11-24 21:23:27,885 - StockSystem - INFO - 所有检查完成，开始启动主界面
+2025-11-24 21:23:27,885 - StockSystem.MainWindow - INFO - 初始化主窗口
+2025-11-24 21:23:27,886 - StockSystem.MainWindow - INFO - 开始初始化用户界面
+2025-11-24 21:23:27,886 - StockSystem.MainWindow - INFO - 设置窗口标题: 股票分析系统 0.5.0-beta
+2025-11-24 21:23:27,886 - StockSystem.MainWindow - INFO - 设置窗口大小: 1400x900
+2025-11-24 21:23:27,886 - StockSystem.MainWindow - INFO - 创建功能窗口...
+2025-11-24 21:23:28,077 - StockSystem.MainWindow - INFO - 功能窗口创建完成，已添加4个选项卡
+2025-11-24 21:23:28,077 - StockSystem.MainWindow - INFO - 创建菜单栏
+2025-11-24 21:23:28,085 - StockSystem.MainWindow - INFO - 创建工具栏
+2025-11-24 21:23:28,085 - StockSystem.MainWindow - INFO - 创建状态栏
+2025-11-24 21:23:28,085 - StockSystem.MainWindow - INFO - 用户界面初始化完成
+2025-11-24 21:23:28,085 - StockSystem.MainWindow - INFO - 主窗口初始化完成
+2025-11-24 21:23:28,188 - StockSystem - INFO - 主界面启动成功
+2025-11-24 21:23:28,188 - StockSystem - INFO - 系统启动完成，进入事件循环
+2025-11-24 22:22:48,572 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 22:22:48,572 - StockSystem - INFO - 测试日志输出...
+2025-11-24 22:22:48,828 - StockSystem - INFO - 开始启动GUI应用程序
+2025-11-24 22:22:48,829 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 22:22:48,829 - StockSystem - INFO - 系统启动 - 股票分析系统 0.5.0-beta
+2025-11-24 22:22:48,839 - StockSystem - INFO - Qt应用程序初始化完成
+2025-11-24 22:22:48,839 - StockSystem - INFO - 开始版本兼容性检查
+2025-11-24 22:22:48,839 - StockSystem - INFO - 版本兼容性检查通过: 版本兼容性检查通过
+2025-11-24 22:22:48,839 - StockSystem - INFO - 开始系统依赖检查
+2025-11-24 22:22:48,907 - StockSystem - INFO - 系统依赖检查完成
+2025-11-24 22:22:48,907 - StockSystem - INFO - 开始系统目录检查
+2025-11-24 22:22:48,907 - StockSystem - INFO - 系统目录检查完成
+2025-11-24 22:22:48,907 - StockSystem - INFO - 所有检查完成，开始启动主界面
+2025-11-24 22:22:48,907 - StockSystem.MainWindow - INFO - 初始化主窗口
+2025-11-24 22:22:48,907 - StockSystem.MainWindow - INFO - 开始初始化用户界面
+2025-11-24 22:22:48,907 - StockSystem.MainWindow - INFO - 设置窗口标题: 股票分析系统 0.5.0-beta
+2025-11-24 22:22:48,907 - StockSystem.MainWindow - INFO - 设置窗口大小: 1400x900
+2025-11-24 22:22:48,908 - StockSystem.MainWindow - INFO - 创建功能窗口...
+2025-11-24 22:22:49,190 - StockSystem.MainWindow - INFO - 功能窗口创建完成，已添加4个选项卡
+2025-11-24 22:22:49,190 - StockSystem.MainWindow - INFO - 创建菜单栏
+2025-11-24 22:22:49,196 - StockSystem.MainWindow - INFO - 创建工具栏
+2025-11-24 22:22:49,196 - StockSystem.MainWindow - INFO - 创建状态栏
+2025-11-24 22:22:49,196 - StockSystem.MainWindow - INFO - 用户界面初始化完成
+2025-11-24 22:22:49,196 - StockSystem.MainWindow - INFO - 主窗口初始化完成
+2025-11-24 22:22:49,327 - StockSystem - INFO - 主界面启动成功
+2025-11-24 22:22:49,327 - StockSystem - INFO - 系统启动完成，进入事件循环
+2025-11-24 22:23:16,101 - StockSystem.MainWindow - INFO - 用户请求关闭应用程序
+2025-11-24 22:23:17,152 - StockSystem.MainWindow - INFO - 用户确认退出，开始清理资源
+2025-11-24 22:23:17,165 - StockSystem - INFO - 应用程序退出
+2025-11-24 22:24:47,798 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 22:24:47,798 - StockSystem - INFO - 测试日志输出...
+2025-11-24 22:24:48,057 - StockSystem - INFO - 开始启动GUI应用程序
+2025-11-24 22:24:48,057 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 22:24:48,058 - StockSystem - INFO - 系统启动 - 股票分析系统 0.5.0-beta
+2025-11-24 22:24:48,069 - StockSystem - INFO - Qt应用程序初始化完成
+2025-11-24 22:24:48,069 - StockSystem - INFO - 开始版本兼容性检查
+2025-11-24 22:24:48,069 - StockSystem - INFO - 版本兼容性检查通过: 版本兼容性检查通过
+2025-11-24 22:24:48,069 - StockSystem - INFO - 开始系统依赖检查
+2025-11-24 22:24:48,123 - StockSystem - INFO - 系统依赖检查完成
+2025-11-24 22:24:48,123 - StockSystem - INFO - 开始系统目录检查
+2025-11-24 22:24:48,123 - StockSystem - INFO - 系统目录检查完成
+2025-11-24 22:24:48,124 - StockSystem - INFO - 所有检查完成，开始启动主界面
+2025-11-24 22:24:48,124 - StockSystem.MainWindow - INFO - 初始化主窗口
+2025-11-24 22:24:48,124 - StockSystem.MainWindow - INFO - 开始初始化用户界面
+2025-11-24 22:24:48,124 - StockSystem.MainWindow - INFO - 设置窗口标题: 股票分析系统 0.5.0-beta
+2025-11-24 22:24:48,124 - StockSystem.MainWindow - INFO - 设置窗口大小: 1400x900
+2025-11-24 22:24:48,125 - StockSystem.MainWindow - INFO - 创建功能窗口...
+2025-11-24 22:24:48,316 - StockSystem.MainWindow - INFO - 功能窗口创建完成，已添加4个选项卡
+2025-11-24 22:24:48,316 - StockSystem.MainWindow - INFO - 创建菜单栏
+2025-11-24 22:24:48,322 - StockSystem.MainWindow - INFO - 创建工具栏
+2025-11-24 22:24:48,324 - StockSystem.MainWindow - INFO - 创建状态栏
+2025-11-24 22:24:48,324 - StockSystem.MainWindow - INFO - 用户界面初始化完成
+2025-11-24 22:24:48,324 - StockSystem.MainWindow - INFO - 主窗口初始化完成
+2025-11-24 22:24:48,427 - StockSystem - INFO - 主界面启动成功
+2025-11-24 22:24:48,427 - StockSystem - INFO - 系统启动完成，进入事件循环
+2025-11-24 22:24:54,450 - StockSystem.DataInitializer - INFO - 开始数据初始化
+2025-11-24 22:24:54,450 - StockSystem.DataInitializer - INFO - 初始化API连接...
+2025-11-24 22:24:54,451 - StockSystem.DataInitializer - INFO - Token类型: tudata
+2025-11-24 22:24:54,452 - StockSystem.DataInitializer - INFO - 使用tudata库
+2025-11-24 22:24:54,455 - StockSystem.DataInitializer - INFO - API连接初始化完成
+2025-11-24 22:24:54,455 - StockSystem.DataInitializer - INFO - 测试API连接...
+2025-11-24 22:24:54,659 - StockSystem.DataInitializer - INFO - API连接测试成功
+2025-11-24 22:24:54,659 - StockSystem.DataInitializer - INFO - 创建数据库表...
+2025-11-24 22:24:54,663 - StockSystem.DataInitializer - INFO - 数据库表创建完成
+2025-11-24 22:24:54,663 - StockSystem.DataInitializer - INFO - 开始执行 batch_1...
+2025-11-24 22:24:56,284 - StockSystem.DataInitializer - ERROR - API stock_basic 调用失败: UNIQUE constraint failed: stock_basic.ts_code
+2025-11-24 22:24:56,568 - StockSystem.DataInitializer - ERROR - API trade_cal 调用失败: UNIQUE constraint failed: trade_calendar.cal_date
+2025-11-24 22:24:56,710 - StockSystem.DataInitializer - ERROR - API index_basic 调用失败: Error binding parameter 0 - probably unsupported type.
+2025-11-24 22:24:56,722 - StockSystem.DataInitializer - ERROR - API sw_index 调用失败: 'pro_api' object has no attribute 'sw_index'
+2025-11-24 22:24:56,902 - StockSystem.DataInitializer - ERROR - API concept 调用失败: UNIQUE constraint failed: concept_classify.concept_code, concept_classify.src
+2025-11-24 22:24:56,916 - StockSystem.DataInitializer - INFO - batch_1 执行结果: batch_1 完成: 0/5 APIs, 0 条记录
+2025-11-24 22:25:51,630 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 22:25:51,630 - StockSystem - INFO - 测试日志输出...
+2025-11-24 22:25:51,871 - StockSystem - INFO - 开始启动GUI应用程序
+2025-11-24 22:25:51,871 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 22:25:51,871 - StockSystem - INFO - 系统启动 - 股票分析系统 0.5.0-beta
+2025-11-24 22:25:51,881 - StockSystem - INFO - Qt应用程序初始化完成
+2025-11-24 22:25:51,881 - StockSystem - INFO - 开始版本兼容性检查
+2025-11-24 22:25:51,881 - StockSystem - INFO - 版本兼容性检查通过: 版本兼容性检查通过
+2025-11-24 22:25:51,881 - StockSystem - INFO - 开始系统依赖检查
+2025-11-24 22:25:51,932 - StockSystem - INFO - 系统依赖检查完成
+2025-11-24 22:25:51,932 - StockSystem - INFO - 开始系统目录检查
+2025-11-24 22:25:51,932 - StockSystem - INFO - 系统目录检查完成
+2025-11-24 22:25:51,932 - StockSystem - INFO - 所有检查完成，开始启动主界面
+2025-11-24 22:25:51,932 - StockSystem.MainWindow - INFO - 初始化主窗口
+2025-11-24 22:25:51,932 - StockSystem.MainWindow - INFO - 开始初始化用户界面
+2025-11-24 22:25:51,932 - StockSystem.MainWindow - INFO - 设置窗口标题: 股票分析系统 0.5.0-beta
+2025-11-24 22:25:51,932 - StockSystem.MainWindow - INFO - 设置窗口大小: 1400x900
+2025-11-24 22:25:51,933 - StockSystem.MainWindow - INFO - 创建功能窗口...
+2025-11-24 22:25:52,174 - StockSystem.MainWindow - INFO - 功能窗口创建完成，已添加4个选项卡
+2025-11-24 22:25:52,174 - StockSystem.MainWindow - INFO - 创建菜单栏
+2025-11-24 22:25:52,178 - StockSystem.MainWindow - INFO - 创建工具栏
+2025-11-24 22:25:52,178 - StockSystem.MainWindow - INFO - 创建状态栏
+2025-11-24 22:25:52,178 - StockSystem.MainWindow - INFO - 用户界面初始化完成
+2025-11-24 22:25:52,178 - StockSystem.MainWindow - INFO - 主窗口初始化完成
+2025-11-24 22:25:52,288 - StockSystem - INFO - 主界面启动成功
+2025-11-24 22:25:52,288 - StockSystem - INFO - 系统启动完成，进入事件循环
+2025-11-24 22:26:07,279 - StockSystem.MainWindow - INFO - 用户请求关闭应用程序
+2025-11-24 22:26:08,349 - StockSystem.MainWindow - INFO - 用户确认退出，开始清理资源
+2025-11-24 22:26:08,357 - StockSystem - INFO - 应用程序退出
+2025-11-24 22:26:23,696 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 22:26:23,696 - StockSystem - INFO - 测试日志输出...
+2025-11-24 22:26:23,918 - StockSystem - INFO - 开始启动GUI应用程序
+2025-11-24 22:26:23,918 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 22:26:23,918 - StockSystem - INFO - 系统启动 - 股票分析系统 0.5.0-beta
+2025-11-24 22:26:23,933 - StockSystem - INFO - Qt应用程序初始化完成
+2025-11-24 22:26:23,933 - StockSystem - INFO - 开始版本兼容性检查
+2025-11-24 22:26:23,934 - StockSystem - INFO - 版本兼容性检查通过: 版本兼容性检查通过
+2025-11-24 22:26:23,934 - StockSystem - INFO - 开始系统依赖检查
+2025-11-24 22:26:23,986 - StockSystem - INFO - 系统依赖检查完成
+2025-11-24 22:26:23,987 - StockSystem - INFO - 开始系统目录检查
+2025-11-24 22:26:23,987 - StockSystem - INFO - 系统目录检查完成
+2025-11-24 22:26:23,987 - StockSystem - INFO - 所有检查完成，开始启动主界面
+2025-11-24 22:26:23,988 - StockSystem.MainWindow - INFO - 初始化主窗口
+2025-11-24 22:26:23,988 - StockSystem.MainWindow - INFO - 开始初始化用户界面
+2025-11-24 22:26:23,988 - StockSystem.MainWindow - INFO - 设置窗口标题: 股票分析系统 0.5.0-beta
+2025-11-24 22:26:23,988 - StockSystem.MainWindow - INFO - 设置窗口大小: 1400x900
+2025-11-24 22:26:23,988 - StockSystem.MainWindow - INFO - 创建功能窗口...
+2025-11-24 22:26:24,184 - StockSystem.MainWindow - INFO - 功能窗口创建完成，已添加4个选项卡
+2025-11-24 22:26:24,184 - StockSystem.MainWindow - INFO - 创建菜单栏
+2025-11-24 22:26:24,191 - StockSystem.MainWindow - INFO - 创建工具栏
+2025-11-24 22:26:24,191 - StockSystem.MainWindow - INFO - 创建状态栏
+2025-11-24 22:26:24,191 - StockSystem.MainWindow - INFO - 用户界面初始化完成
+2025-11-24 22:26:24,191 - StockSystem.MainWindow - INFO - 主窗口初始化完成
+2025-11-24 22:26:24,297 - StockSystem - INFO - 主界面启动成功
+2025-11-24 22:26:24,297 - StockSystem - INFO - 系统启动完成，进入事件循环
+2025-11-24 22:26:27,365 - StockSystem.DataInitializer - INFO - 开始数据初始化
+2025-11-24 22:26:27,365 - StockSystem.DataInitializer - INFO - 初始化API连接...
+2025-11-24 22:26:27,365 - StockSystem.DataInitializer - INFO - Token类型: tudata
+2025-11-24 22:26:27,367 - StockSystem.DataInitializer - INFO - 使用tudata库
+2025-11-24 22:26:27,370 - StockSystem.DataInitializer - INFO - API连接初始化完成
+2025-11-24 22:26:27,370 - StockSystem.DataInitializer - INFO - 测试API连接...
+2025-11-24 22:26:27,570 - StockSystem.DataInitializer - INFO - API连接测试成功
+2025-11-24 22:26:27,571 - StockSystem.DataInitializer - INFO - 创建数据库表...
+2025-11-24 22:26:27,575 - StockSystem.DataInitializer - INFO - 数据库表创建完成
+2025-11-24 22:26:27,575 - StockSystem.DataInitializer - INFO - 开始执行 batch_1...
+2025-11-24 22:26:36,041 - StockSystem.DataInitializer - ERROR - 数据插入失败: Error binding parameter 0 - probably unsupported type.
+2025-11-24 22:26:36,047 - StockSystem.DataInitializer - ERROR - API index_basic 调用失败: Error binding parameter 0 - probably unsupported type.
+2025-11-24 22:26:37,290 - StockSystem.DataInitializer - ERROR - 数据插入失败: duplicate column name: update_time
+2025-11-24 22:26:37,291 - StockSystem.DataInitializer - ERROR - API sw_index 调用失败: no such table: industry_classify
+2025-11-24 22:26:37,546 - StockSystem.DataInitializer - INFO - batch_1 执行结果: batch_1 完成: 3/5 APIs, 7063 条记录
+2025-11-24 23:53:22,105 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 23:53:22,105 - StockSystem - INFO - 测试日志输出...
+2025-11-24 23:53:22,332 - StockSystem - INFO - 开始启动GUI应用程序
+2025-11-24 23:53:22,332 - StockSystem - INFO - 日志系统初始化完成
+2025-11-24 23:53:22,332 - StockSystem - INFO - 系统启动 - 股票分析系统 0.5.0-beta
+2025-11-24 23:53:22,355 - StockSystem - INFO - Qt应用程序初始化完成
+2025-11-24 23:53:22,355 - StockSystem - INFO - 开始版本兼容性检查
+2025-11-24 23:53:22,355 - StockSystem - INFO - 版本兼容性检查通过: 版本兼容性检查通过
+2025-11-24 23:53:22,355 - StockSystem - INFO - 开始系统依赖检查
+2025-11-24 23:53:22,406 - StockSystem - INFO - 系统依赖检查完成
+2025-11-24 23:53:22,407 - StockSystem - INFO - 开始系统目录检查
+2025-11-24 23:53:22,407 - StockSystem - INFO - 系统目录检查完成
+2025-11-24 23:53:22,407 - StockSystem - INFO - 所有检查完成，开始启动主界面
+2025-11-24 23:53:22,408 - StockSystem.MainWindow - INFO - 初始化主窗口
+2025-11-24 23:53:22,408 - StockSystem.MainWindow - INFO - 开始初始化用户界面
+2025-11-24 23:53:22,408 - StockSystem.MainWindow - INFO - 设置窗口标题: 股票分析系统 0.5.0-beta
+2025-11-24 23:53:22,408 - StockSystem.MainWindow - INFO - 设置窗口大小: 1400x900
+2025-11-24 23:53:22,408 - StockSystem.MainWindow - INFO - 创建功能窗口...
+2025-11-24 23:53:22,626 - StockSystem.MainWindow - INFO - 功能窗口创建完成，已添加4个选项卡
+2025-11-24 23:53:22,627 - StockSystem.MainWindow - INFO - 创建菜单栏
+2025-11-24 23:53:22,635 - StockSystem.MainWindow - INFO - 创建工具栏
+2025-11-24 23:53:22,635 - StockSystem.MainWindow - INFO - 创建状态栏
+2025-11-24 23:53:22,635 - StockSystem.MainWindow - INFO - 用户界面初始化完成
+2025-11-24 23:53:22,635 - StockSystem.MainWindow - INFO - 主窗口初始化完成
+2025-11-24 23:53:22,740 - StockSystem - INFO - 主界面启动成功
+2025-11-24 23:53:22,740 - StockSystem - INFO - 系统启动完成，进入事件循环
