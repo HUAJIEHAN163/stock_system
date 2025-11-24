@@ -1,29 +1,47 @@
-# Tushare股票系统运行环境依赖
+# 股票分析系统依赖包
 
-# 核心数据源
+# GUI框架
+PyQt5>=5.15.0
+
+# 数据处理
+pandas>=1.3.0
+numpy>=1.21.0
+
+# 数据源
 tushare>=1.2.89
 tudata>=1.0.0
 
-# 网页爬虫相关
-requests>=2.28.0
-beautifulsoup4>=4.11.0
-lxml>=4.9.0
+# 网络请求
+requests>=2.25.0
 
-# 数据处理
-pandas>=1.5.0
-numpy>=1.21.0
+# 网页解析
+beautifulsoup4>=4.9.0
+lxml>=4.6.0
 
-# 文档生成相关
-markdown>=3.4.0
-jinja2>=3.1.0
+# 数据库
+sqlite3
 
-# 可选：CHM文档生成（Windows专用）
-# pyhtmlhelp>=0.2.0  # 需要Windows环境
+# 图表绘制（可选）
+matplotlib>=3.3.0
+plotly>=5.0.0
 
-# 可选：PDF生成
-# reportlab>=3.6.0
-# weasyprint>=57.0
+# 技术指标计算（可选）
+talib>=0.4.0
 
-# 开发工具
-jupyter>=1.0.0
-ipython>=8.0.0
+# 日志记录
+loguru>=0.5.0
+
+# 配置文件处理
+configparser
+
+# 时间处理
+python-dateutil>=2.8.0
+
+# 数学计算
+scipy>=1.7.0
+
+# 多线程
+concurrent-futures
+
+# 系统工具
+psutil>=5.8.0
