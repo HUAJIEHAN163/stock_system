@@ -35,3 +35,472 @@
 2025-11-25 00:08:06,124 - StockSystem.DataInitializer - INFO - 数据库表创建完成
 2025-11-25 00:08:06,124 - StockSystem.DataInitializer - INFO - 开始执行 batch_1...
 2025-11-25 00:08:08,202 - StockSystem.DataInitializer - INFO - batch_1 执行结果: batch_1 完成: 4/4 APIs, 8848 条记录
+2025-11-25 00:14:17,271 - StockSystem - INFO - 日志系统初始化完成
+2025-11-25 00:14:17,272 - StockSystem - INFO - 测试日志输出...
+2025-11-25 00:14:17,495 - StockSystem - INFO - 开始启动GUI应用程序
+2025-11-25 00:14:17,496 - StockSystem - INFO - 日志系统初始化完成
+2025-11-25 00:14:17,496 - StockSystem - INFO - 系统启动 - 股票分析系统 0.6.0-beta
+2025-11-25 00:14:17,506 - StockSystem - INFO - Qt应用程序初始化完成
+2025-11-25 00:14:17,506 - StockSystem - INFO - 开始版本兼容性检查
+2025-11-25 00:14:17,506 - StockSystem - INFO - 版本兼容性检查通过: 版本兼容性检查通过
+2025-11-25 00:14:17,506 - StockSystem - INFO - 开始系统依赖检查
+2025-11-25 00:14:17,559 - StockSystem - INFO - 系统依赖检查完成
+2025-11-25 00:14:17,560 - StockSystem - INFO - 开始系统目录检查
+2025-11-25 00:14:17,560 - StockSystem - INFO - 系统目录检查完成
+2025-11-25 00:14:17,560 - StockSystem - INFO - 所有检查完成，开始启动主界面
+2025-11-25 00:14:17,561 - StockSystem.MainWindow - INFO - 初始化主窗口
+2025-11-25 00:14:17,561 - StockSystem.MainWindow - INFO - 开始初始化用户界面
+2025-11-25 00:14:17,561 - StockSystem.MainWindow - INFO - 设置窗口标题: 股票分析系统 0.6.0-beta
+2025-11-25 00:14:17,561 - StockSystem.MainWindow - INFO - 设置窗口大小: 1400x900
+2025-11-25 00:14:17,561 - StockSystem.MainWindow - INFO - 创建功能窗口...
+2025-11-25 00:14:17,759 - StockSystem.MainWindow - INFO - 功能窗口创建完成，已添加4个选项卡
+2025-11-25 00:14:17,760 - StockSystem.MainWindow - INFO - 创建菜单栏
+2025-11-25 00:14:17,766 - StockSystem.MainWindow - INFO - 创建工具栏
+2025-11-25 00:14:17,766 - StockSystem.MainWindow - INFO - 创建状态栏
+2025-11-25 00:14:17,766 - StockSystem.MainWindow - INFO - 用户界面初始化完成
+2025-11-25 00:14:17,766 - StockSystem.MainWindow - INFO - 主窗口初始化完成
+2025-11-25 00:14:17,869 - StockSystem - INFO - 主界面启动成功
+2025-11-25 00:14:17,870 - StockSystem - INFO - 系统启动完成，进入事件循环
+2025-11-25 00:14:20,313 - StockSystem.DataInitializer - INFO - 开始数据初始化
+2025-11-25 00:14:20,313 - StockSystem.DataInitializer - INFO - 初始化API连接...
+2025-11-25 00:14:20,315 - StockSystem.DataInitializer - INFO - Token类型: tudata
+2025-11-25 00:14:20,316 - StockSystem.DataInitializer - INFO - 使用tudata库
+2025-11-25 00:14:20,318 - StockSystem.DataInitializer - INFO - API连接初始化完成
+2025-11-25 00:14:20,318 - StockSystem.DataInitializer - INFO - 测试API连接...
+2025-11-25 00:14:20,545 - StockSystem.DataInitializer - INFO - API连接测试成功
+2025-11-25 00:14:20,547 - StockSystem.DataInitializer - INFO - 创建数据库表...
+2025-11-25 00:14:20,566 - StockSystem.DataInitializer - INFO - 数据库表创建完成
+2025-11-25 00:14:20,566 - StockSystem.DataInitializer - INFO - 开始执行 batch_1...
+2025-11-25 00:14:22,826 - StockSystem.DataInitializer - INFO - batch_1 执行结果: batch_1 完成: 4/4 APIs, 8848 条记录
+2025-11-25 00:14:22,826 - StockSystem.DataInitializer - INFO - 开始执行 batch_2...
+2025-11-25 00:14:24,048 - StockSystem.DataInitializer - INFO - 批次 1 获取数据: 6000 条
+2025-11-25 00:14:25,393 - StockSystem.DataInitializer - INFO - 批次 2 获取数据: 6000 条
+2025-11-25 00:14:26,672 - StockSystem.DataInitializer - INFO - 批次 3 获取数据: 6000 条
+2025-11-25 00:14:27,995 - StockSystem.DataInitializer - INFO - 批次 4 获取数据: 6000 条
+2025-11-25 00:14:29,252 - StockSystem.DataInitializer - INFO - 批次 5 获取数据: 6000 条
+2025-11-25 00:14:30,541 - StockSystem.DataInitializer - INFO - 批次 6 获取数据: 6000 条
+2025-11-25 00:14:31,891 - StockSystem.DataInitializer - INFO - 批次 7 获取数据: 6000 条
+2025-11-25 00:14:33,177 - StockSystem.DataInitializer - INFO - 批次 8 获取数据: 6000 条
+2025-11-25 00:14:34,467 - StockSystem.DataInitializer - INFO - 批次 9 获取数据: 6000 条
+2025-11-25 00:14:35,755 - StockSystem.DataInitializer - INFO - 批次 10 获取数据: 6000 条
+2025-11-25 00:14:37,095 - StockSystem.DataInitializer - INFO - 批次 11 获取数据: 6000 条
+2025-11-25 00:14:45,749 - StockSystem.DataInitializer - INFO - 批次 12 获取数据: 6000 条
+2025-11-25 00:14:52,902 - StockSystem.DataInitializer - INFO - 批次 13 获取数据: 6000 条
+2025-11-25 00:14:55,664 - StockSystem.DataInitializer - INFO - 批次 14 获取数据: 6000 条
+2025-11-25 00:14:58,418 - StockSystem.DataInitializer - INFO - 批次 15 获取数据: 6000 条
+2025-11-25 00:15:00,373 - StockSystem.DataInitializer - INFO - 批次 16 获取数据: 6000 条
+2025-11-25 00:15:02,186 - StockSystem.DataInitializer - INFO - 批次 17 获取数据: 6000 条
+2025-11-25 00:15:03,849 - StockSystem.DataInitializer - INFO - 批次 18 获取数据: 6000 条
+2025-11-25 00:15:05,846 - StockSystem.DataInitializer - INFO - 批次 19 获取数据: 6000 条
+2025-11-25 00:15:07,554 - StockSystem.DataInitializer - INFO - 批次 20 获取数据: 6000 条
+2025-11-25 00:15:09,178 - StockSystem.DataInitializer - INFO - 批次 21 获取数据: 6000 条
+2025-11-25 00:15:10,754 - StockSystem.DataInitializer - INFO - 批次 22 获取数据: 6000 条
+2025-11-25 00:15:12,356 - StockSystem.DataInitializer - INFO - 批次 23 获取数据: 6000 条
+2025-11-25 00:15:14,122 - StockSystem.DataInitializer - INFO - 批次 24 获取数据: 6000 条
+2025-11-25 00:15:15,894 - StockSystem.DataInitializer - INFO - 批次 25 获取数据: 6000 条
+2025-11-25 00:15:17,597 - StockSystem.DataInitializer - INFO - 批次 26 获取数据: 6000 条
+2025-11-25 00:15:19,975 - StockSystem.DataInitializer - INFO - 批次 27 获取数据: 6000 条
+2025-11-25 00:15:21,614 - StockSystem.DataInitializer - INFO - 批次 28 获取数据: 6000 条
+2025-11-25 00:15:23,215 - StockSystem.DataInitializer - INFO - 批次 29 获取数据: 6000 条
+2025-11-25 00:15:29,466 - StockSystem.DataInitializer - INFO - 批次 30 获取数据: 6000 条
+2025-11-25 00:15:38,717 - StockSystem.DataInitializer - INFO - 批次 31 获取数据: 6000 条
+2025-11-25 00:15:44,847 - StockSystem.DataInitializer - INFO - 批次 32 获取数据: 6000 条
+2025-11-25 00:15:47,610 - StockSystem.DataInitializer - INFO - 批次 33 获取数据: 6000 条
+2025-11-25 00:15:49,623 - StockSystem.DataInitializer - INFO - 批次 34 获取数据: 6000 条
+2025-11-25 00:15:51,430 - StockSystem.DataInitializer - INFO - 批次 35 获取数据: 6000 条
+2025-11-25 00:15:53,143 - StockSystem.DataInitializer - INFO - 批次 36 获取数据: 6000 条
+2025-11-25 00:15:54,863 - StockSystem.DataInitializer - INFO - 批次 37 获取数据: 6000 条
+2025-11-25 00:15:56,489 - StockSystem.DataInitializer - INFO - 批次 38 获取数据: 6000 条
+2025-11-25 00:15:58,084 - StockSystem.DataInitializer - INFO - 批次 39 获取数据: 6000 条
+2025-11-25 00:15:59,640 - StockSystem.DataInitializer - INFO - 批次 40 获取数据: 6000 条
+2025-11-25 00:16:02,476 - StockSystem.DataInitializer - INFO - 批次 41 获取数据: 6000 条
+2025-11-25 00:16:04,009 - StockSystem.DataInitializer - INFO - 批次 42 获取数据: 6000 条
+2025-11-25 00:16:06,034 - StockSystem.DataInitializer - INFO - 批次 43 获取数据: 6000 条
+2025-11-25 00:16:07,858 - StockSystem.DataInitializer - INFO - 批次 44 获取数据: 6000 条
+2025-11-25 00:16:09,592 - StockSystem.DataInitializer - INFO - 批次 45 获取数据: 6000 条
+2025-11-25 00:16:11,225 - StockSystem.DataInitializer - INFO - 批次 46 获取数据: 6000 条
+2025-11-25 00:16:12,775 - StockSystem.DataInitializer - INFO - 批次 47 获取数据: 6000 条
+2025-11-25 00:16:14,294 - StockSystem.DataInitializer - INFO - 批次 48 获取数据: 6000 条
+2025-11-25 00:16:15,829 - StockSystem.DataInitializer - INFO - 批次 49 获取数据: 6000 条
+2025-11-25 00:16:17,448 - StockSystem.DataInitializer - INFO - 批次 50 获取数据: 6000 条
+2025-11-25 00:16:19,068 - StockSystem.DataInitializer - INFO - 批次 51 获取数据: 6000 条
+2025-11-25 00:16:20,699 - StockSystem.DataInitializer - INFO - 批次 52 获取数据: 6000 条
+2025-11-25 00:16:22,268 - StockSystem.DataInitializer - INFO - 批次 53 获取数据: 6000 条
+2025-11-25 00:16:23,839 - StockSystem.DataInitializer - INFO - 批次 54 获取数据: 6000 条
+2025-11-25 00:16:25,341 - StockSystem.DataInitializer - INFO - 批次 55 获取数据: 6000 条
+2025-11-25 00:16:26,833 - StockSystem.DataInitializer - INFO - 批次 56 获取数据: 6000 条
+2025-11-25 00:16:28,340 - StockSystem.DataInitializer - INFO - 批次 57 获取数据: 6000 条
+2025-11-25 00:16:29,806 - StockSystem.DataInitializer - INFO - 批次 58 获取数据: 6000 条
+2025-11-25 00:16:31,275 - StockSystem.DataInitializer - INFO - 批次 59 获取数据: 6000 条
+2025-11-25 00:16:32,745 - StockSystem.DataInitializer - INFO - 批次 60 获取数据: 6000 条
+2025-11-25 00:16:34,391 - StockSystem.DataInitializer - INFO - 批次 61 获取数据: 6000 条
+2025-11-25 00:16:35,859 - StockSystem.DataInitializer - INFO - 批次 62 获取数据: 6000 条
+2025-11-25 00:16:37,329 - StockSystem.DataInitializer - INFO - 批次 63 获取数据: 6000 条
+2025-11-25 00:16:38,762 - StockSystem.DataInitializer - INFO - 批次 64 获取数据: 6000 条
+2025-11-25 00:16:40,245 - StockSystem.DataInitializer - INFO - 批次 65 获取数据: 6000 条
+2025-11-25 00:16:41,673 - StockSystem.DataInitializer - INFO - 批次 66 获取数据: 6000 条
+2025-11-25 00:16:43,282 - StockSystem.DataInitializer - INFO - 批次 67 获取数据: 6000 条
+2025-11-25 00:16:44,724 - StockSystem.DataInitializer - INFO - 批次 68 获取数据: 6000 条
+2025-11-25 00:16:46,141 - StockSystem.DataInitializer - INFO - 批次 69 获取数据: 6000 条
+2025-11-25 00:16:47,573 - StockSystem.DataInitializer - INFO - 批次 70 获取数据: 6000 条
+2025-11-25 00:16:49,269 - StockSystem.DataInitializer - INFO - 批次 71 获取数据: 6000 条
+2025-11-25 00:16:50,849 - StockSystem.DataInitializer - INFO - 批次 72 获取数据: 6000 条
+2025-11-25 00:16:52,290 - StockSystem.DataInitializer - INFO - 批次 73 获取数据: 6000 条
+2025-11-25 00:16:53,731 - StockSystem.DataInitializer - INFO - 批次 74 获取数据: 6000 条
+2025-11-25 00:16:55,353 - StockSystem.DataInitializer - INFO - 批次 75 获取数据: 6000 条
+2025-11-25 00:16:56,770 - StockSystem.DataInitializer - INFO - 批次 76 获取数据: 6000 条
+2025-11-25 00:16:58,205 - StockSystem.DataInitializer - INFO - 批次 77 获取数据: 6000 条
+2025-11-25 00:16:59,655 - StockSystem.DataInitializer - INFO - 批次 78 获取数据: 6000 条
+2025-11-25 00:17:01,088 - StockSystem.DataInitializer - INFO - 批次 79 获取数据: 6000 条
+2025-11-25 00:17:02,560 - StockSystem.DataInitializer - INFO - 批次 80 获取数据: 6000 条
+2025-11-25 00:17:03,973 - StockSystem.DataInitializer - INFO - 批次 81 获取数据: 6000 条
+2025-11-25 00:17:05,388 - StockSystem.DataInitializer - INFO - 批次 82 获取数据: 6000 条
+2025-11-25 00:17:07,035 - StockSystem.DataInitializer - INFO - 批次 83 获取数据: 6000 条
+2025-11-25 00:17:08,630 - StockSystem.DataInitializer - INFO - 批次 84 获取数据: 6000 条
+2025-11-25 00:17:10,228 - StockSystem.DataInitializer - INFO - 批次 85 获取数据: 6000 条
+2025-11-25 00:17:11,744 - StockSystem.DataInitializer - INFO - 批次 86 获取数据: 6000 条
+2025-11-25 00:17:13,227 - StockSystem.DataInitializer - INFO - 批次 87 获取数据: 6000 条
+2025-11-25 00:17:14,675 - StockSystem.DataInitializer - INFO - 批次 88 获取数据: 6000 条
+2025-11-25 00:17:16,142 - StockSystem.DataInitializer - INFO - 批次 89 获取数据: 6000 条
+2025-11-25 00:17:17,615 - StockSystem.DataInitializer - INFO - 批次 90 获取数据: 6000 条
+2025-11-25 00:17:19,221 - StockSystem.DataInitializer - INFO - 批次 91 获取数据: 6000 条
+2025-11-25 00:17:20,701 - StockSystem.DataInitializer - INFO - 批次 92 获取数据: 6000 条
+2025-11-25 00:17:22,180 - StockSystem.DataInitializer - INFO - 批次 93 获取数据: 6000 条
+2025-11-25 00:17:23,692 - StockSystem.DataInitializer - INFO - 批次 94 获取数据: 6000 条
+2025-11-25 00:17:25,118 - StockSystem.DataInitializer - INFO - 批次 95 获取数据: 6000 条
+2025-11-25 00:17:26,581 - StockSystem.DataInitializer - INFO - 批次 96 获取数据: 6000 条
+2025-11-25 00:17:28,136 - StockSystem.DataInitializer - INFO - 批次 97 获取数据: 6000 条
+2025-11-25 00:17:29,599 - StockSystem.DataInitializer - INFO - 批次 98 获取数据: 6000 条
+2025-11-25 00:17:31,040 - StockSystem.DataInitializer - INFO - 批次 99 获取数据: 6000 条
+2025-11-25 00:17:32,478 - StockSystem.DataInitializer - INFO - 批次 100 获取数据: 6000 条
+2025-11-25 00:17:33,962 - StockSystem.DataInitializer - INFO - 批次 101 获取数据: 6000 条
+2025-11-25 00:17:35,494 - StockSystem.DataInitializer - INFO - 批次 102 获取数据: 6000 条
+2025-11-25 00:17:36,902 - StockSystem.DataInitializer - INFO - 批次 103 获取数据: 6000 条
+2025-11-25 00:17:38,292 - StockSystem.DataInitializer - INFO - 批次 104 获取数据: 6000 条
+2025-11-25 00:17:39,703 - StockSystem.DataInitializer - INFO - 批次 105 获取数据: 6000 条
+2025-11-25 00:17:41,265 - StockSystem.DataInitializer - INFO - 批次 106 获取数据: 6000 条
+2025-11-25 00:17:42,832 - StockSystem.DataInitializer - INFO - 批次 107 获取数据: 6000 条
+2025-11-25 00:17:44,319 - StockSystem.DataInitializer - INFO - 批次 108 获取数据: 6000 条
+2025-11-25 00:17:45,891 - StockSystem.DataInitializer - INFO - 批次 109 获取数据: 6000 条
+2025-11-25 00:17:46,640 - StockSystem.DataInitializer - INFO - 批次 110 获取数据: 1449 条
+2025-11-25 00:17:47,167 - StockSystem.DataInitializer - INFO - weekly 数据获取成功: 206 条记录
+2025-11-25 00:17:47,306 - StockSystem.DataInitializer - INFO - monthly 数据获取成功: 48 条记录
+2025-11-25 00:17:47,621 - StockSystem.DataInitializer - ERROR - 数据插入失败: Error binding parameter 0 - probably unsupported type.
+2025-11-25 00:17:47,628 - StockSystem.DataInitializer - ERROR - API index_dailybasic 调用失败: Error binding parameter 0 - probably unsupported type.
+2025-11-25 00:17:47,632 - StockSystem.DataInitializer - INFO - batch_2 执行结果: batch_2 完成: 4/5 APIs, 656669 条记录
+2025-11-25 00:28:24,107 - StockSystem.MainWindow - INFO - 用户请求关闭应用程序
+2025-11-25 00:28:25,234 - StockSystem.MainWindow - INFO - 用户确认退出，开始清理资源
+2025-11-25 00:28:25,247 - StockSystem - INFO - 应用程序退出
+2025-11-25 00:28:44,367 - StockSystem - INFO - 日志系统初始化完成
+2025-11-25 00:28:44,369 - StockSystem - INFO - 测试日志输出...
+2025-11-25 00:28:44,594 - StockSystem - INFO - 开始启动GUI应用程序
+2025-11-25 00:28:44,595 - StockSystem - INFO - 日志系统初始化完成
+2025-11-25 00:28:44,595 - StockSystem - INFO - 系统启动 - 股票分析系统 0.6.0-beta
+2025-11-25 00:28:44,604 - StockSystem - INFO - Qt应用程序初始化完成
+2025-11-25 00:28:44,604 - StockSystem - INFO - 开始版本兼容性检查
+2025-11-25 00:28:44,604 - StockSystem - INFO - 版本兼容性检查通过: 版本兼容性检查通过
+2025-11-25 00:28:44,604 - StockSystem - INFO - 开始系统依赖检查
+2025-11-25 00:28:44,656 - StockSystem - INFO - 系统依赖检查完成
+2025-11-25 00:28:44,657 - StockSystem - INFO - 开始系统目录检查
+2025-11-25 00:28:44,657 - StockSystem - INFO - 系统目录检查完成
+2025-11-25 00:28:44,658 - StockSystem - INFO - 所有检查完成，开始启动主界面
+2025-11-25 00:28:44,658 - StockSystem.MainWindow - INFO - 初始化主窗口
+2025-11-25 00:28:44,658 - StockSystem.MainWindow - INFO - 开始初始化用户界面
+2025-11-25 00:28:44,658 - StockSystem.MainWindow - INFO - 设置窗口标题: 股票分析系统 0.6.0-beta
+2025-11-25 00:28:44,658 - StockSystem.MainWindow - INFO - 设置窗口大小: 1400x900
+2025-11-25 00:28:44,658 - StockSystem.MainWindow - INFO - 创建功能窗口...
+2025-11-25 00:28:44,871 - StockSystem.MainWindow - INFO - 功能窗口创建完成，已添加4个选项卡
+2025-11-25 00:28:44,871 - StockSystem.MainWindow - INFO - 创建菜单栏
+2025-11-25 00:28:44,878 - StockSystem.MainWindow - INFO - 创建工具栏
+2025-11-25 00:28:44,879 - StockSystem.MainWindow - INFO - 创建状态栏
+2025-11-25 00:28:44,879 - StockSystem.MainWindow - INFO - 用户界面初始化完成
+2025-11-25 00:28:44,879 - StockSystem.MainWindow - INFO - 主窗口初始化完成
+2025-11-25 00:28:44,985 - StockSystem - INFO - 主界面启动成功
+2025-11-25 00:28:44,985 - StockSystem - INFO - 系统启动完成，进入事件循环
+2025-11-25 00:28:48,403 - StockSystem.DataInitializer - INFO - 开始数据初始化
+2025-11-25 00:28:48,403 - StockSystem.DataInitializer - INFO - 初始化API连接...
+2025-11-25 00:28:48,404 - StockSystem.DataInitializer - INFO - Token类型: tudata
+2025-11-25 00:28:48,406 - StockSystem.DataInitializer - INFO - 使用tudata库
+2025-11-25 00:28:48,408 - StockSystem.DataInitializer - INFO - API连接初始化完成
+2025-11-25 00:28:48,409 - StockSystem.DataInitializer - INFO - 测试API连接...
+2025-11-25 00:28:48,654 - StockSystem.DataInitializer - INFO - API连接测试成功
+2025-11-25 00:28:48,654 - StockSystem.DataInitializer - INFO - 创建数据库表...
+2025-11-25 00:28:48,675 - StockSystem.DataInitializer - INFO - 数据库表创建完成
+2025-11-25 00:28:48,675 - StockSystem.DataInitializer - INFO - 开始执行 batch_1...
+2025-11-25 00:28:51,068 - StockSystem.DataInitializer - INFO - batch_1 执行结果: batch_1 完成: 4/4 APIs, 8848 条记录
+2025-11-25 00:28:51,068 - StockSystem.DataInitializer - INFO - 开始执行 batch_2...
+2025-11-25 00:28:52,343 - StockSystem.DataInitializer - WARNING - 批次 1 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:28:53,381 - StockSystem.DataInitializer - WARNING - 批次 2 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:28:54,411 - StockSystem.DataInitializer - WARNING - 批次 3 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:28:55,448 - StockSystem.DataInitializer - WARNING - 批次 4 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:28:56,513 - StockSystem.DataInitializer - WARNING - 批次 5 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:28:57,546 - StockSystem.DataInitializer - WARNING - 批次 6 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:28:58,556 - StockSystem.DataInitializer - WARNING - 批次 7 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:28:59,606 - StockSystem.DataInitializer - WARNING - 批次 8 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:00,827 - StockSystem.DataInitializer - WARNING - 批次 9 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:02,011 - StockSystem.DataInitializer - WARNING - 批次 10 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:03,087 - StockSystem.DataInitializer - WARNING - 批次 11 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:04,095 - StockSystem.DataInitializer - WARNING - 批次 12 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:05,099 - StockSystem.DataInitializer - WARNING - 批次 13 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:06,097 - StockSystem.DataInitializer - WARNING - 批次 14 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:07,150 - StockSystem.DataInitializer - WARNING - 批次 15 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:08,183 - StockSystem.DataInitializer - WARNING - 批次 16 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:09,214 - StockSystem.DataInitializer - WARNING - 批次 17 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:10,198 - StockSystem.DataInitializer - WARNING - 批次 18 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:11,232 - StockSystem.DataInitializer - WARNING - 批次 19 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:12,268 - StockSystem.DataInitializer - WARNING - 批次 20 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:15,885 - StockSystem.DataInitializer - WARNING - 批次 21 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:16,931 - StockSystem.DataInitializer - WARNING - 批次 22 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:21,629 - StockSystem.DataInitializer - WARNING - 批次 23 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:22,677 - StockSystem.DataInitializer - WARNING - 批次 24 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:23,668 - StockSystem.DataInitializer - WARNING - 批次 25 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:24,704 - StockSystem.DataInitializer - WARNING - 批次 26 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:25,713 - StockSystem.DataInitializer - WARNING - 批次 27 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:26,813 - StockSystem.DataInitializer - WARNING - 批次 28 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:27,848 - StockSystem.DataInitializer - WARNING - 批次 29 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:28,954 - StockSystem.DataInitializer - WARNING - 批次 30 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:30,003 - StockSystem.DataInitializer - WARNING - 批次 31 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:31,072 - StockSystem.DataInitializer - WARNING - 批次 32 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:32,122 - StockSystem.DataInitializer - WARNING - 批次 33 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:33,230 - StockSystem.DataInitializer - WARNING - 批次 34 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:34,289 - StockSystem.DataInitializer - WARNING - 批次 35 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:35,296 - StockSystem.DataInitializer - WARNING - 批次 36 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:36,382 - StockSystem.DataInitializer - WARNING - 批次 37 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:37,476 - StockSystem.DataInitializer - WARNING - 批次 38 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:38,521 - StockSystem.DataInitializer - WARNING - 批次 39 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:39,525 - StockSystem.DataInitializer - WARNING - 批次 40 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:40,555 - StockSystem.DataInitializer - WARNING - 批次 41 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:41,571 - StockSystem.DataInitializer - WARNING - 批次 42 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:42,571 - StockSystem.DataInitializer - WARNING - 批次 43 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:43,611 - StockSystem.DataInitializer - WARNING - 批次 44 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:44,642 - StockSystem.DataInitializer - WARNING - 批次 45 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:45,655 - StockSystem.DataInitializer - WARNING - 批次 46 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:46,671 - StockSystem.DataInitializer - WARNING - 批次 47 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:47,723 - StockSystem.DataInitializer - WARNING - 批次 48 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:48,875 - StockSystem.DataInitializer - WARNING - 批次 49 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:49,925 - StockSystem.DataInitializer - WARNING - 批次 50 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:50,997 - StockSystem.DataInitializer - WARNING - 批次 51 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:52,055 - StockSystem.DataInitializer - WARNING - 批次 52 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:53,141 - StockSystem.DataInitializer - WARNING - 批次 53 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:54,181 - StockSystem.DataInitializer - WARNING - 批次 54 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:55,184 - StockSystem.DataInitializer - WARNING - 批次 55 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:56,219 - StockSystem.DataInitializer - WARNING - 批次 56 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:57,246 - StockSystem.DataInitializer - WARNING - 批次 57 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:58,279 - StockSystem.DataInitializer - WARNING - 批次 58 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:29:59,381 - StockSystem.DataInitializer - WARNING - 批次 59 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:00,393 - StockSystem.DataInitializer - WARNING - 批次 60 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:01,396 - StockSystem.DataInitializer - WARNING - 批次 61 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:02,378 - StockSystem.DataInitializer - WARNING - 批次 62 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:03,523 - StockSystem.DataInitializer - WARNING - 批次 63 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:04,612 - StockSystem.DataInitializer - WARNING - 批次 64 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:05,617 - StockSystem.DataInitializer - WARNING - 批次 65 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:06,680 - StockSystem.DataInitializer - WARNING - 批次 66 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:07,680 - StockSystem.DataInitializer - WARNING - 批次 67 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:08,669 - StockSystem.DataInitializer - WARNING - 批次 68 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:09,709 - StockSystem.DataInitializer - WARNING - 批次 69 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:10,700 - StockSystem.DataInitializer - WARNING - 批次 70 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:11,684 - StockSystem.DataInitializer - WARNING - 批次 71 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:12,721 - StockSystem.DataInitializer - WARNING - 批次 72 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:13,699 - StockSystem.DataInitializer - WARNING - 批次 73 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:14,738 - StockSystem.DataInitializer - WARNING - 批次 74 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:15,905 - StockSystem.DataInitializer - WARNING - 批次 75 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:16,936 - StockSystem.DataInitializer - WARNING - 批次 76 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:18,045 - StockSystem.DataInitializer - WARNING - 批次 77 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:19,089 - StockSystem.DataInitializer - WARNING - 批次 78 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:20,149 - StockSystem.DataInitializer - WARNING - 批次 79 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:21,188 - StockSystem.DataInitializer - WARNING - 批次 80 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:22,230 - StockSystem.DataInitializer - WARNING - 批次 81 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:23,276 - StockSystem.DataInitializer - WARNING - 批次 82 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:24,315 - StockSystem.DataInitializer - WARNING - 批次 83 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:25,358 - StockSystem.DataInitializer - WARNING - 批次 84 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:26,463 - StockSystem.DataInitializer - WARNING - 批次 85 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:27,510 - StockSystem.DataInitializer - WARNING - 批次 86 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:28,531 - StockSystem.DataInitializer - WARNING - 批次 87 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:29,527 - StockSystem.DataInitializer - WARNING - 批次 88 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:30,580 - StockSystem.DataInitializer - WARNING - 批次 89 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:31,625 - StockSystem.DataInitializer - WARNING - 批次 90 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:32,607 - StockSystem.DataInitializer - WARNING - 批次 91 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:33,602 - StockSystem.DataInitializer - WARNING - 批次 92 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:35,051 - StockSystem.DataInitializer - WARNING - 批次 93 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:36,205 - StockSystem.DataInitializer - WARNING - 批次 94 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:37,307 - StockSystem.DataInitializer - WARNING - 批次 95 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:38,403 - StockSystem.DataInitializer - WARNING - 批次 96 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:39,562 - StockSystem.DataInitializer - WARNING - 批次 97 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:40,750 - StockSystem.DataInitializer - WARNING - 批次 98 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:41,866 - StockSystem.DataInitializer - WARNING - 批次 99 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:42,994 - StockSystem.DataInitializer - WARNING - 批次 100 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:44,115 - StockSystem.DataInitializer - WARNING - 批次 101 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:45,204 - StockSystem.DataInitializer - WARNING - 批次 102 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:46,290 - StockSystem.DataInitializer - WARNING - 批次 103 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:47,385 - StockSystem.DataInitializer - WARNING - 批次 104 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:48,495 - StockSystem.DataInitializer - WARNING - 批次 105 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:49,581 - StockSystem.DataInitializer - WARNING - 批次 106 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:50,607 - StockSystem.DataInitializer - WARNING - 批次 107 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:51,707 - StockSystem.DataInitializer - WARNING - 批次 108 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:52,760 - StockSystem.DataInitializer - WARNING - 批次 109 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:53,084 - StockSystem.DataInitializer - WARNING - 批次 110 获取失败: UNIQUE constraint failed: daily_basic.ts_code, daily_basic.trade_date
+2025-11-25 00:30:53,245 - StockSystem.DataInitializer - ERROR - weekly数据获取失败: UNIQUE constraint failed: weekly_basic.ts_code, weekly_basic.trade_date
+2025-11-25 00:30:53,416 - StockSystem.DataInitializer - ERROR - monthly数据获取失败: UNIQUE constraint failed: monthly_basic.ts_code, monthly_basic.trade_date
+2025-11-25 00:30:53,900 - StockSystem.DataInitializer - ERROR - 数据插入失败: Error binding parameter 0 - probably unsupported type.
+2025-11-25 00:30:53,933 - StockSystem.DataInitializer - INFO - batch_2 执行结果: batch_2 完成: 3/5 APIs, 967 条记录
+2025-11-25 00:42:51,131 - StockSystem - INFO - 日志系统初始化完成
+2025-11-25 00:42:51,131 - StockSystem - INFO - 测试日志输出...
+2025-11-25 00:42:51,368 - StockSystem - INFO - 开始启动GUI应用程序
+2025-11-25 00:42:51,368 - StockSystem - INFO - 日志系统初始化完成
+2025-11-25 00:42:51,369 - StockSystem - INFO - 系统启动 - 股票分析系统 0.6.0-beta
+2025-11-25 00:42:51,379 - StockSystem - INFO - Qt应用程序初始化完成
+2025-11-25 00:42:51,379 - StockSystem - INFO - 开始版本兼容性检查
+2025-11-25 00:42:51,379 - StockSystem - INFO - 版本兼容性检查通过: 版本兼容性检查通过
+2025-11-25 00:42:51,379 - StockSystem - INFO - 开始系统依赖检查
+2025-11-25 00:42:51,434 - StockSystem - INFO - 系统依赖检查完成
+2025-11-25 00:42:51,434 - StockSystem - INFO - 开始系统目录检查
+2025-11-25 00:42:51,434 - StockSystem - INFO - 系统目录检查完成
+2025-11-25 00:42:51,434 - StockSystem - INFO - 所有检查完成，开始启动主界面
+2025-11-25 00:42:51,434 - StockSystem.MainWindow - INFO - 初始化主窗口
+2025-11-25 00:42:51,434 - StockSystem.MainWindow - INFO - 开始初始化用户界面
+2025-11-25 00:42:51,434 - StockSystem.MainWindow - INFO - 设置窗口标题: 股票分析系统 0.6.0-beta
+2025-11-25 00:42:51,434 - StockSystem.MainWindow - INFO - 设置窗口大小: 1400x900
+2025-11-25 00:42:51,434 - StockSystem.MainWindow - INFO - 创建功能窗口...
+2025-11-25 00:42:51,631 - StockSystem.MainWindow - INFO - 功能窗口创建完成，已添加4个选项卡
+2025-11-25 00:42:51,631 - StockSystem.MainWindow - INFO - 创建菜单栏
+2025-11-25 00:42:51,640 - StockSystem.MainWindow - INFO - 创建工具栏
+2025-11-25 00:42:51,640 - StockSystem.MainWindow - INFO - 创建状态栏
+2025-11-25 00:42:51,640 - StockSystem.MainWindow - INFO - 用户界面初始化完成
+2025-11-25 00:42:51,640 - StockSystem.MainWindow - INFO - 主窗口初始化完成
+2025-11-25 00:42:51,745 - StockSystem - INFO - 主界面启动成功
+2025-11-25 00:42:51,746 - StockSystem - INFO - 系统启动完成，进入事件循环
+2025-11-25 00:42:54,262 - StockSystem.DataInitializer - INFO - 开始数据初始化
+2025-11-25 00:42:54,262 - StockSystem.DataInitializer - INFO - 初始化API连接...
+2025-11-25 00:42:54,263 - StockSystem.DataInitializer - INFO - Token类型: tudata
+2025-11-25 00:42:54,264 - StockSystem.DataInitializer - INFO - 使用tudata库
+2025-11-25 00:42:54,267 - StockSystem.DataInitializer - INFO - API连接初始化完成
+2025-11-25 00:42:54,267 - StockSystem.DataInitializer - INFO - 测试API连接...
+2025-11-25 00:42:54,482 - StockSystem.DataInitializer - INFO - API连接测试成功
+2025-11-25 00:42:54,482 - StockSystem.DataInitializer - INFO - 创建数据库表...
+2025-11-25 00:42:54,506 - StockSystem.DataInitializer - INFO - 数据库表创建完成
+2025-11-25 00:42:54,506 - StockSystem.DataInitializer - INFO - 开始执行 batch_1...
+2025-11-25 00:42:54,507 - StockSystem.DataInitializer - INFO - 清空表 stock_basic 的数据
+2025-11-25 00:42:54,513 - StockSystem.DataInitializer - INFO - 清空表 stock_company 的数据
+2025-11-25 00:42:54,518 - StockSystem.DataInitializer - INFO - 清空表 trade_calendar 的数据
+2025-11-25 00:42:54,523 - StockSystem.DataInitializer - INFO - 清空表 new_share 的数据
+2025-11-25 00:42:56,879 - StockSystem.DataInitializer - INFO - batch_1 执行结果: batch_1 完成: 4/4 APIs, 8848 条记录
+2025-11-25 00:42:56,879 - StockSystem.DataInitializer - INFO - 开始执行 batch_2...
+2025-11-25 00:42:56,880 - StockSystem.DataInitializer - INFO - 清空表 daily_basic 的数据
+2025-11-25 00:42:56,977 - StockSystem.DataInitializer - INFO - 清空表 weekly_basic 的数据
+2025-11-25 00:42:56,983 - StockSystem.DataInitializer - INFO - 清空表 monthly_basic 的数据
+2025-11-25 00:42:56,988 - StockSystem.DataInitializer - INFO - 清空表 adj_factor 的数据
+2025-11-25 00:42:56,992 - StockSystem.DataInitializer - INFO - 清空表 index_dailybasic 的数据
+2025-11-25 00:42:58,254 - StockSystem.DataInitializer - INFO - 批次 1 获取数据: 6000 条
+2025-11-25 00:42:59,585 - StockSystem.DataInitializer - INFO - 批次 2 获取数据: 6000 条
+2025-11-25 00:43:00,934 - StockSystem.DataInitializer - INFO - 批次 3 获取数据: 6000 条
+2025-11-25 00:43:02,271 - StockSystem.DataInitializer - INFO - 批次 4 获取数据: 6000 条
+2025-11-25 00:43:03,625 - StockSystem.DataInitializer - INFO - 批次 5 获取数据: 6000 条
+2025-11-25 00:43:04,975 - StockSystem.DataInitializer - INFO - 批次 6 获取数据: 6000 条
+2025-11-25 00:43:06,310 - StockSystem.DataInitializer - INFO - 批次 7 获取数据: 6000 条
+2025-11-25 00:43:07,646 - StockSystem.DataInitializer - INFO - 批次 8 获取数据: 6000 条
+2025-11-25 00:43:09,008 - StockSystem.DataInitializer - INFO - 批次 9 获取数据: 6000 条
+2025-11-25 00:43:10,360 - StockSystem.DataInitializer - INFO - 批次 10 获取数据: 6000 条
+2025-11-25 00:43:11,750 - StockSystem.DataInitializer - INFO - 批次 11 获取数据: 6000 条
+2025-11-25 00:43:13,109 - StockSystem.DataInitializer - INFO - 批次 12 获取数据: 6000 条
+2025-11-25 00:43:14,450 - StockSystem.DataInitializer - INFO - 批次 13 获取数据: 6000 条
+2025-11-25 00:43:15,756 - StockSystem.DataInitializer - INFO - 批次 14 获取数据: 6000 条
+2025-11-25 00:43:17,074 - StockSystem.DataInitializer - INFO - 批次 15 获取数据: 6000 条
+2025-11-25 00:43:18,376 - StockSystem.DataInitializer - INFO - 批次 16 获取数据: 6000 条
+2025-11-25 00:43:19,690 - StockSystem.DataInitializer - INFO - 批次 17 获取数据: 6000 条
+2025-11-25 00:43:21,050 - StockSystem.DataInitializer - INFO - 批次 18 获取数据: 6000 条
+2025-11-25 00:43:22,349 - StockSystem.DataInitializer - INFO - 批次 19 获取数据: 6000 条
+2025-11-25 00:43:23,816 - StockSystem.DataInitializer - INFO - 批次 20 获取数据: 6000 条
+2025-11-25 00:43:25,174 - StockSystem.DataInitializer - INFO - 批次 21 获取数据: 6000 条
+2025-11-25 00:43:26,727 - StockSystem.DataInitializer - INFO - 批次 22 获取数据: 6000 条
+2025-11-25 00:43:28,183 - StockSystem.DataInitializer - INFO - 批次 23 获取数据: 6000 条
+2025-11-25 00:43:29,531 - StockSystem.DataInitializer - INFO - 批次 24 获取数据: 6000 条
+2025-11-25 00:43:30,842 - StockSystem.DataInitializer - INFO - 批次 25 获取数据: 6000 条
+2025-11-25 00:43:32,248 - StockSystem.DataInitializer - INFO - 批次 26 获取数据: 6000 条
+2025-11-25 00:43:33,596 - StockSystem.DataInitializer - INFO - 批次 27 获取数据: 6000 条
+2025-11-25 00:43:34,951 - StockSystem.DataInitializer - INFO - 批次 28 获取数据: 6000 条
+2025-11-25 00:43:36,262 - StockSystem.DataInitializer - INFO - 批次 29 获取数据: 6000 条
+2025-11-25 00:43:37,561 - StockSystem.DataInitializer - INFO - 批次 30 获取数据: 6000 条
+2025-11-25 00:43:39,012 - StockSystem.DataInitializer - INFO - 批次 31 获取数据: 6000 条
+2025-11-25 00:43:40,422 - StockSystem.DataInitializer - INFO - 批次 32 获取数据: 6000 条
+2025-11-25 00:43:41,785 - StockSystem.DataInitializer - INFO - 批次 33 获取数据: 6000 条
+2025-11-25 00:43:43,151 - StockSystem.DataInitializer - INFO - 批次 34 获取数据: 6000 条
+2025-11-25 00:43:44,514 - StockSystem.DataInitializer - INFO - 批次 35 获取数据: 6000 条
+2025-11-25 00:43:45,840 - StockSystem.DataInitializer - INFO - 批次 36 获取数据: 6000 条
+2025-11-25 00:43:47,283 - StockSystem.DataInitializer - INFO - 批次 37 获取数据: 6000 条
+2025-11-25 00:43:48,620 - StockSystem.DataInitializer - INFO - 批次 38 获取数据: 6000 条
+2025-11-25 00:43:49,996 - StockSystem.DataInitializer - INFO - 批次 39 获取数据: 6000 条
+2025-11-25 00:43:51,317 - StockSystem.DataInitializer - INFO - 批次 40 获取数据: 6000 条
+2025-11-25 00:43:52,673 - StockSystem.DataInitializer - INFO - 批次 41 获取数据: 6000 条
+2025-11-25 00:43:53,980 - StockSystem.DataInitializer - INFO - 批次 42 获取数据: 6000 条
+2025-11-25 00:43:55,264 - StockSystem.DataInitializer - INFO - 批次 43 获取数据: 6000 条
+2025-11-25 00:43:56,590 - StockSystem.DataInitializer - INFO - 批次 44 获取数据: 6000 条
+2025-11-25 00:43:57,949 - StockSystem.DataInitializer - INFO - 批次 45 获取数据: 6000 条
+2025-11-25 00:43:59,269 - StockSystem.DataInitializer - INFO - 批次 46 获取数据: 6000 条
+2025-11-25 00:44:00,677 - StockSystem.DataInitializer - INFO - 批次 47 获取数据: 6000 条
+2025-11-25 00:44:01,993 - StockSystem.DataInitializer - INFO - 批次 48 获取数据: 6000 条
+2025-11-25 00:44:03,296 - StockSystem.DataInitializer - INFO - 批次 49 获取数据: 6000 条
+2025-11-25 00:44:04,631 - StockSystem.DataInitializer - INFO - 批次 50 获取数据: 6000 条
+2025-11-25 00:44:06,081 - StockSystem.DataInitializer - INFO - 批次 51 获取数据: 6000 条
+2025-11-25 00:44:07,388 - StockSystem.DataInitializer - INFO - 批次 52 获取数据: 6000 条
+2025-11-25 00:44:08,798 - StockSystem.DataInitializer - INFO - 批次 53 获取数据: 6000 条
+2025-11-25 00:44:10,222 - StockSystem.DataInitializer - INFO - 批次 54 获取数据: 6000 条
+2025-11-25 00:44:11,546 - StockSystem.DataInitializer - INFO - 批次 55 获取数据: 6000 条
+2025-11-25 00:44:12,852 - StockSystem.DataInitializer - INFO - 批次 56 获取数据: 6000 条
+2025-11-25 00:44:14,170 - StockSystem.DataInitializer - INFO - 批次 57 获取数据: 6000 条
+2025-11-25 00:44:15,424 - StockSystem.DataInitializer - INFO - 批次 58 获取数据: 6000 条
+2025-11-25 00:44:16,783 - StockSystem.DataInitializer - INFO - 批次 59 获取数据: 6000 条
+2025-11-25 00:44:18,112 - StockSystem.DataInitializer - INFO - 批次 60 获取数据: 6000 条
+2025-11-25 00:44:19,439 - StockSystem.DataInitializer - INFO - 批次 61 获取数据: 6000 条
+2025-11-25 00:44:20,709 - StockSystem.DataInitializer - INFO - 批次 62 获取数据: 6000 条
+2025-11-25 00:44:22,029 - StockSystem.DataInitializer - INFO - 批次 63 获取数据: 6000 条
+2025-11-25 00:44:23,468 - StockSystem.DataInitializer - INFO - 批次 64 获取数据: 6000 条
+2025-11-25 00:44:24,870 - StockSystem.DataInitializer - INFO - 批次 65 获取数据: 6000 条
+2025-11-25 00:44:26,286 - StockSystem.DataInitializer - INFO - 批次 66 获取数据: 6000 条
+2025-11-25 00:44:27,750 - StockSystem.DataInitializer - INFO - 批次 67 获取数据: 6000 条
+2025-11-25 00:44:29,112 - StockSystem.DataInitializer - INFO - 批次 68 获取数据: 6000 条
+2025-11-25 00:44:30,484 - StockSystem.DataInitializer - INFO - 批次 69 获取数据: 6000 条
+2025-11-25 00:44:31,911 - StockSystem.DataInitializer - INFO - 批次 70 获取数据: 6000 条
+2025-11-25 00:44:33,271 - StockSystem.DataInitializer - INFO - 批次 71 获取数据: 6000 条
+2025-11-25 00:44:34,718 - StockSystem.DataInitializer - INFO - 批次 72 获取数据: 6000 条
+2025-11-25 00:44:36,099 - StockSystem.DataInitializer - INFO - 批次 73 获取数据: 6000 条
+2025-11-25 00:44:37,464 - StockSystem.DataInitializer - INFO - 批次 74 获取数据: 6000 条
+2025-11-25 00:44:38,799 - StockSystem.DataInitializer - INFO - 批次 75 获取数据: 6000 条
+2025-11-25 00:44:40,231 - StockSystem.DataInitializer - INFO - 批次 76 获取数据: 6000 条
+2025-11-25 00:44:41,687 - StockSystem.DataInitializer - INFO - 批次 77 获取数据: 6000 条
+2025-11-25 00:44:43,051 - StockSystem.DataInitializer - INFO - 批次 78 获取数据: 6000 条
+2025-11-25 00:44:44,488 - StockSystem.DataInitializer - INFO - 批次 79 获取数据: 6000 条
+2025-11-25 00:44:45,844 - StockSystem.DataInitializer - INFO - 批次 80 获取数据: 6000 条
+2025-11-25 00:44:47,204 - StockSystem.DataInitializer - INFO - 批次 81 获取数据: 6000 条
+2025-11-25 00:44:48,569 - StockSystem.DataInitializer - INFO - 批次 82 获取数据: 6000 条
+2025-11-25 00:44:49,976 - StockSystem.DataInitializer - INFO - 批次 83 获取数据: 6000 条
+2025-11-25 00:44:51,329 - StockSystem.DataInitializer - INFO - 批次 84 获取数据: 6000 条
+2025-11-25 00:44:52,799 - StockSystem.DataInitializer - INFO - 批次 85 获取数据: 6000 条
+2025-11-25 00:44:54,224 - StockSystem.DataInitializer - INFO - 批次 86 获取数据: 6000 条
+2025-11-25 00:44:55,610 - StockSystem.DataInitializer - INFO - 批次 87 获取数据: 6000 条
+2025-11-25 00:44:57,021 - StockSystem.DataInitializer - INFO - 批次 88 获取数据: 6000 条
+2025-11-25 00:44:58,389 - StockSystem.DataInitializer - INFO - 批次 89 获取数据: 6000 条
+2025-11-25 00:44:59,813 - StockSystem.DataInitializer - INFO - 批次 90 获取数据: 6000 条
+2025-11-25 00:45:01,263 - StockSystem.DataInitializer - INFO - 批次 91 获取数据: 6000 条
+2025-11-25 00:45:02,654 - StockSystem.DataInitializer - INFO - 批次 92 获取数据: 6000 条
+2025-11-25 00:45:04,009 - StockSystem.DataInitializer - INFO - 批次 93 获取数据: 6000 条
+2025-11-25 00:45:05,463 - StockSystem.DataInitializer - INFO - 批次 94 获取数据: 6000 条
+2025-11-25 00:45:06,880 - StockSystem.DataInitializer - INFO - 批次 95 获取数据: 6000 条
+2025-11-25 00:45:08,264 - StockSystem.DataInitializer - INFO - 批次 96 获取数据: 6000 条
+2025-11-25 00:45:09,608 - StockSystem.DataInitializer - INFO - 批次 97 获取数据: 6000 条
+2025-11-25 00:45:11,143 - StockSystem.DataInitializer - INFO - 批次 98 获取数据: 6000 条
+2025-11-25 00:45:12,524 - StockSystem.DataInitializer - INFO - 批次 99 获取数据: 6000 条
+2025-11-25 00:45:13,901 - StockSystem.DataInitializer - INFO - 批次 100 获取数据: 6000 条
+2025-11-25 00:45:15,275 - StockSystem.DataInitializer - INFO - 批次 101 获取数据: 6000 条
+2025-11-25 00:45:16,634 - StockSystem.DataInitializer - INFO - 批次 102 获取数据: 6000 条
+2025-11-25 00:45:17,989 - StockSystem.DataInitializer - INFO - 批次 103 获取数据: 6000 条
+2025-11-25 00:45:19,357 - StockSystem.DataInitializer - INFO - 批次 104 获取数据: 6000 条
+2025-11-25 00:45:20,784 - StockSystem.DataInitializer - INFO - 批次 105 获取数据: 6000 条
+2025-11-25 00:45:22,151 - StockSystem.DataInitializer - INFO - 批次 106 获取数据: 6000 条
+2025-11-25 00:45:23,547 - StockSystem.DataInitializer - INFO - 批次 107 获取数据: 6000 条
+2025-11-25 00:45:24,899 - StockSystem.DataInitializer - INFO - 批次 108 获取数据: 6000 条
+2025-11-25 00:45:26,254 - StockSystem.DataInitializer - INFO - 批次 109 获取数据: 6000 条
+2025-11-25 00:45:27,044 - StockSystem.DataInitializer - INFO - 批次 110 获取数据: 1449 条
+2025-11-25 00:45:27,566 - StockSystem.DataInitializer - INFO - weekly 数据获取成功: 206 条记录
+2025-11-25 00:45:27,744 - StockSystem.DataInitializer - INFO - monthly 数据获取成功: 48 条记录
+2025-11-25 00:45:28,109 - StockSystem.DataInitializer - ERROR - 数据插入失败: Error binding parameter 0 - probably unsupported type.
+2025-11-25 00:45:28,131 - StockSystem.DataInitializer - INFO - batch_2 执行结果: batch_2 完成: 5/5 APIs, 656670 条记录

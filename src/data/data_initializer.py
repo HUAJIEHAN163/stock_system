@@ -123,6 +123,14 @@ class DataInitializer(QThread):
         
     def _execute_batch(self, batch_name, apis):
         """执行单个批次"""
+        # 初始化时清空相关表数据
+        if batch_name == 'batch_1':
+            self.progress_updated.emit(-1, "清空旧数据...")
+            self._clear_batch_tables(batch_name, apis)
+        elif batch_name == 'batch_2':
+            self.progress_updated.emit(-1, "清空行情数据...")
+            self._clear_batch_tables(batch_name, apis)
+            
         batch_results = {
             'total_apis': len(apis),
             'completed_apis': 0,
@@ -256,14 +264,46 @@ class DataInitializer(QThread):
             if api_name == 'index_basic' and 'base_point' in df.columns:
                 df['base_point'] = pd.to_numeric(df['base_point'], errors='coerce')
             
+            # 修复index_dailybasic数据类型问题
+            if api_name == 'index_dailybasic':
+                # 处理字典对象问题，将所有列转换为字符串后再转数值
+                for col in df.columns:
+                    if col not in ['ts_code', 'trade_date']:
+                        # 先转为字符串，处理字典对象
+                        df[col] = df[col].astype(str)
+                        # 将空字典和无效值替换为NaN
+                        df[col] = df[col].replace(['{}',' {}', 'nan', 'None', ''], None)
+                        # 转换为数值类型
+                        df[col] = pd.to_numeric(df[col], errors='coerce')
+                        # 替换无穷大值
+                        df[col] = df[col].replace([float('inf'), float('-inf')], None)
+            
             # 保存到数据库（使用replace模式避免重复）
             try:
                 records = self.db_manager.execute_insert(table_name, df, mode='replace')
             except Exception as insert_error:
                 self.logger.error(f"数据插入失败: {insert_error}")
-                # 尝试删除后重新插入
-                self.db_manager.clear_table_data(table_name)
-                records = self.db_manager.execute_insert(table_name, df, mode='append')
+                
+                # 尝试更彻底的数据清理
+                try:
+                    df_clean = df.copy()
+                    for col in df_clean.columns:
+                        if col not in ['ts_code', 'trade_date', 'update_time']:
+                            # 先转为字符串处理字典对象
+                            df_clean[col] = df_clean[col].astype(str)
+                            df_clean[col] = df_clean[col].replace(['{}',' {}', 'nan', 'None', ''], None)
+                            # 再转换为数值
+                            df_clean[col] = pd.to_numeric(df_clean[col], errors='coerce')
+                            df_clean[col] = df_clean[col].replace([float('inf'), float('-inf')], None)
+                        elif df_clean[col].dtype == 'object' and col != 'update_time':
+                            df_clean[col] = df_clean[col].astype(str).replace(['{}', 'nan', 'None'], None)
+                    
+                    self.db_manager.clear_table_data(table_name)
+                    records = self.db_manager.execute_insert(table_name, df_clean, mode='append')
+                    
+                except Exception as retry_error:
+                    self.logger.error(f"重试插入失败: {retry_error}")
+                    return False, 0, f"数据插入失败: {str(insert_error)}"
             
             return True, records, f"成功获取 {records} 条记录"
             
@@ -313,7 +353,7 @@ class DataInitializer(QThread):
                     # 单日全市场查询
                     df = self.pro.daily(trade_date=date_str)
                     if not df.empty:
-                        records = self.db_manager.execute_insert(config['table'], df)
+                        records = self.db_manager.execute_insert(config['table'], df, mode='append')
                         total_records += records
                         self.logger.info(f"获取 {date_str} 数据: {records} 条")
                     
@@ -349,7 +389,7 @@ class DataInitializer(QThread):
                     # 多股票多日查询
                     df = self.pro.daily(ts_code=codes_str, start_date=start_date, end_date=end_date)
                     if not df.empty:
-                        records = self.db_manager.execute_insert(config['table'], df)
+                        records = self.db_manager.execute_insert(config['table'], df, mode='append')
                         total_records += records
                         self.logger.info(f"批次 {i//batch_size + 1} 获取数据: {records} 条")
                     
@@ -449,3 +489,14 @@ class DataInitializer(QThread):
         except Exception as e:
             self.logger.error(f"加载token配置失败: {e}")
             return None
+            
+    def _clear_batch_tables(self, batch_name, apis):
+        """清空批次相关表数据"""
+        try:
+            for api_key, config in apis.items():
+                table_name = config.get('table')
+                if table_name:
+                    self.logger.info(f"清空表 {table_name} 的数据")
+                    self.db_manager.clear_table_data(table_name)
+        except Exception as e:
+            self.logger.warning(f"清空表数据失败: {e}")
