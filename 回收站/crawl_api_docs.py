@@ -1,0 +1,164 @@
+import requests
+from bs4 import BeautifulSoup
+import os
+import time
+import re
+
+def crawl_api_doc(doc_id, api_name):
+    """爬取单个API文档"""
+    url = f"https://tushare.pro/document/2?doc_id={doc_id}"
+    
+    try:
+        response = requests.get(url, timeout=10)
+        response.encoding = 'utf-8'
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # 提取主要内容
+        content = []
+        content.append(f"# {api_name}\n\n")
+        content.append(f"**接口地址**: {url}\n\n")
+        
+        # 查找接口描述
+        desc_div = soup.find('div', class_='content')
+        if desc_div:
+            # 提取文本内容
+            paragraphs = desc_div.find_all(['p', 'h1', 'h2', 'h3', 'h4'])
+            for p in paragraphs:
+                text = p.get_text().strip()
+                if text and len(text) > 5:
+                    content.append(f"{text}\n\n")
+        
+        # 查找参数表格
+        tables = soup.find_all('table')
+        for i, table in enumerate(tables):
+            content.append(f"## 表格 {i+1}\n\n")
+            
+            # 表头
+            headers = []
+            header_row = table.find('tr')
+            if header_row:
+                for th in header_row.find_all(['th', 'td']):
+                    headers.append(th.get_text().strip())
+                content.append("| " + " | ".join(headers) + " |\n")
+                content.append("| " + " | ".join(["---"] * len(headers)) + " |\n")
+            
+            # 表格内容
+            rows = table.find_all('tr')[1:]  # 跳过表头
+            for row in rows:
+                cells = []
+                for td in row.find_all(['td', 'th']):
+                    cell_text = td.get_text().strip().replace('\n', ' ')
+                    cells.append(cell_text)
+                if cells:
+                    content.append("| " + " | ".join(cells) + " |\n")
+            content.append("\n")
+        
+        # 查找代码示例
+        code_blocks = soup.find_all('pre')
+        for i, code in enumerate(code_blocks):
+            content.append(f"## 代码示例 {i+1}\n\n")
+            content.append("```python\n")
+            content.append(code.get_text())
+            content.append("\n```\n\n")
+        
+        return ''.join(content)
+        
+    except Exception as e:
+        return f"# {api_name}\n\n**错误**: 无法获取文档内容 - {str(e)}\n\n**接口地址**: {url}\n"
+
+def main():
+    """主函数"""
+    
+    # API分类数据
+    api_data = {
+        '多只股票多日查询': {
+            '基础数据': {
+                25: '股票列表', 329: '上市公司基本信息', 26: '交易日历',
+                100: 'HS300成分股', 112: '上证50成分股', 193: '中证500成分股',
+                194: '中证1000成分股', 375: '上证380成分股', 123: '科创板股票', 262: '创业板股票'
+            },
+            '行情数据': {
+                27: 'A股日线行情', 372: '周线行情', 370: '月线行情', 28: '指数日线行情',
+                315: '指数基本信息', 316: '指数成分和权重', 317: '申万行业一级指数',
+                32: '大盘指数每日指标', 109: '市场通用行情接口', 183: '沪深市场通用行情接口',
+                48: '备用行情接口', 255: '港股行情'
+            },
+            '参考数据': {
+                61: '沪深股通资金流向', 62: '沪深股通十大成交股', 110: '中概股列表',
+                111: '中概股月线行情', 124: '港股列表', 160: '港股通成分股',
+                161: '港股通每日成交统计', 166: '港股通资金流向', 175: '港股通十大成交股'
+            },
+            '特色数据': {
+                292: '概念股分类', 293: '概念股列表', 294: '地域分类',
+                296: '申万行业分类', 328: '申万行业成分', 295: '中信行业分类'
+            }
+        },
+        '单只股票多日查询': {
+            '行情数据': {374: '复权因子', 144: '停复牌信息', 336: '每日涨跌停价格'},
+            '财务数据': {
+                33: '利润表', 36: '资产负债表', 44: '现金流量表', 45: '业绩预告',
+                46: '业绩快报', 103: '分红送股', 79: '财务指标数据',
+                80: '财务审计意见', 81: '主营业务构成', 162: '财务数据'
+            },
+            '特色数据': {
+                274: '券商盈利预测数据', 188: '限售股解禁', 353: '股权质押统计数据',
+                354: '股权质押明细', 364: '股票技术因子', 399: '每日筹码分布',
+                275: '同花顺概念和行业', 267: '同花顺概念'
+            },
+            '资金流向': {170: '个股资金流向'}
+        },
+        '单只股票逐条获取': {
+            '基础数据': {397: '股票曾用名', 398: '沪深股通成分股'},
+            '行情数据': {
+                145: '每日停复牌统计', 146: '停牌原因', 365: '每日涨跌停统计', 214: '港股通每日成交统计'
+            },
+            '资金流向': {
+                348: '沪深港通资金流向', 349: '沪深港通十大成交股', 371: '港股通十大成交股',
+                343: '每日指标', 344: '通用行情接口', 345: '沪深市场通用行情接口', 47: '备用行情接口'
+            },
+            '打板数据': {
+                106: '涨跌停统计', 107: '每日涨跌停价格', 355: '涨跌停股票统计', 298: '股票回购',
+                356: '概念股分类', 357: '概念股列表', 259: '限售股解禁', 260: '股权质押统计数据',
+                261: '股权质押明细', 362: '股票技术面因子', 363: '每日筹码分布', 382: '每日筹码集中度',
+                369: '股票技术因子', 311: '同花顺概念和行业', 312: '同花顺概念', 320: '申万行业分类',
+                321: '申万行业成分', 376: '中信行业分类', 377: '中信行业指数行情', 378: '中信行业指数成分股',
+                347: '每日重要指标', 350: 'A股特色数据', 351: '市场交易统计'
+            },
+            '两融转融通': {
+                58: '融资融券交易汇总', 59: '融资融券交易明细', 326: '融资融券可充抵保证金证券',
+                332: '融资融券标的证券', 331: '转融通担保品', 333: '转融券成交明细', 334: '转融资成交明细'
+            }
+        }
+    }
+    
+    # 创建docs目录
+    docs_dir = 'D:\\stock_system\\docs'
+    os.makedirs(docs_dir, exist_ok=True)
+    
+    # 爬取所有API文档
+    total_apis = sum(sum(len(subcategory) for subcategory in category.values()) for category in api_data.values())
+    current = 0
+    
+    for main_category, categories in api_data.items():
+        for category, apis in categories.items():
+            for doc_id, api_name in apis.items():
+                current += 1
+                print(f"正在爬取 {current}/{total_apis}: {api_name}")
+                
+                # 爬取文档
+                content = crawl_api_doc(doc_id, api_name)
+                
+                # 保存到本地文件
+                safe_filename = re.sub(r'[<>:"/\\|?*]', '_', api_name)
+                file_path = os.path.join(docs_dir, f"{doc_id}_{safe_filename}.md")
+                
+                with open(file_path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+                
+                time.sleep(0.5)  # 避免请求过快
+    
+    print(f"完成！共爬取 {total_apis} 个API文档")
+    print(f"文档保存在: {docs_dir}")
+
+if __name__ == "__main__":
+    main()

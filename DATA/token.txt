@@ -1,0 +1,10 @@
+token：
+7e4d915cb5b54b2abf1ad77eaf29bbf1
+
+使用方法：
+1、安装对应库
+pip install tudata
+
+2、将import tushare as ts修改为
+import  tudata as ts
+其他代码都不用变

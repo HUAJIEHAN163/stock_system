@@ -1,0 +1,65 @@
+Tushare API 分类结果
+==================================================
+
+可以批量获取的数据:
+
+基础数据:
+  - https://tushare.pro/document/2?doc_id=14
+
+行情数据:
+  - https://tushare.pro/document/2?doc_id=15
+
+财务数据:
+  - https://tushare.pro/document/2?doc_id=16
+
+参考数据:
+  - https://tushare.pro/document/2?doc_id=17
+
+特色数据:
+  - https://tushare.pro/document/2?doc_id=291
+
+资金流向:
+  - https://tushare.pro/document/2?doc_id=170
+  - https://tushare.pro/document/2?doc_id=348
+  - https://tushare.pro/document/2?doc_id=349
+  - https://tushare.pro/document/2?doc_id=371
+  - https://tushare.pro/document/2?doc_id=343
+  - https://tushare.pro/document/2?doc_id=344
+  - https://tushare.pro/document/2?doc_id=345
+  - https://tushare.pro/document/2?doc_id=47
+
+打板数据:
+  - https://tushare.pro/document/2?doc_id=106
+  - https://tushare.pro/document/2?doc_id=107
+  - https://tushare.pro/document/2?doc_id=355
+  - https://tushare.pro/document/2?doc_id=298
+  - https://tushare.pro/document/2?doc_id=356
+  - https://tushare.pro/document/2?doc_id=357
+  - https://tushare.pro/document/2?doc_id=259
+  - https://tushare.pro/document/2?doc_id=260
+  - https://tushare.pro/document/2?doc_id=261
+  - https://tushare.pro/document/2?doc_id=362
+  - https://tushare.pro/document/2?doc_id=363
+  - https://tushare.pro/document/2?doc_id=382
+  - https://tushare.pro/document/2?doc_id=369
+  - https://tushare.pro/document/2?doc_id=311
+  - https://tushare.pro/document/2?doc_id=312
+  - https://tushare.pro/document/2?doc_id=320
+  - https://tushare.pro/document/2?doc_id=321
+  - https://tushare.pro/document/2?doc_id=376
+  - https://tushare.pro/document/2?doc_id=377
+  - https://tushare.pro/document/2?doc_id=378
+  - https://tushare.pro/document/2?doc_id=347
+  - https://tushare.pro/document/2?doc_id=350
+  - https://tushare.pro/document/2?doc_id=351
+
+单只股票逐条获取的数据:
+
+两融转融通:
+  - https://tushare.pro/document/2?doc_id=58
+  - https://tushare.pro/document/2?doc_id=59
+  - https://tushare.pro/document/2?doc_id=326
+  - https://tushare.pro/document/2?doc_id=332
+  - https://tushare.pro/document/2?doc_id=331
+  - https://tushare.pro/document/2?doc_id=333
+  - https://tushare.pro/document/2?doc_id=334
